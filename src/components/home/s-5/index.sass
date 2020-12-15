@@ -1,0 +1,85 @@
+.home_s-5
+	padding: 4rem 0 0 0
+	.home-slide-swiper-wrapper
+		position: relative
+		margin-top: 7rem
+		@media screen and ( max-width: 1024.98px )
+			margin-top: 3rem
+		@media screen and ( max-width: 576px )
+			margin-top: 0
+	.nav-arrow-prev,.nav-arrow-next
+		position: absolute
+		width: 40px
+		height: 40px
+		top: 40%
+		display: flex
+		justify-content: center
+		align-items: center
+		transition: .3s all  ease-in-out
+		border: none
+		@media screen and ( max-width: 400px )
+			top: 40%
+		&:hover,&:focus
+			em
+				color: #ffffff
+		em
+			transition: .3s all  ease-in-out
+			font-size: 3.6rem
+			color: #ffffff
+	.nav-arrow-next
+		right: -60px
+		@media screen and ( max-width: 1439px)
+			right: -45px
+		@media screen and ( max-width: 1350px)
+			right: 0
+			
+		@media screen and ( max-width: 767px)
+			right: 15px
+		@media screen and ( max-width: 576px)
+			right: 0
+			
+	.nav-arrow-prev
+		left: -60px
+		@media screen and ( max-width: 1439px)
+			left: -45px
+		@media screen and ( max-width: 1350px)
+			left: 0
+		@media screen and ( max-width: 767px)
+			left: 15px
+		@media screen and ( max-width: 576px)
+			left: 0
+	.swiper-container
+		margin: 0
+		@media screen and ( max-width: 1350px)
+			margin: 0 50px
+	.swiper-slide
+		height: auto
+		display: flex
+		justify-content: center
+		align-items: center
+		.wrapper
+			display: flex
+			justify-content: center
+			align-items: center
+			height: 180px
+			width: 180px
+			border-width: 10px
+			border-radius: 50%
+			background: #ffffff
+			overflow: hidden
+			transition: .3s all ease-in-out
+			a
+				display: flex
+				justify-content: center
+				align-items: center
+				img
+					max-width: 100%
+					height: auto
+					max-height: 180px
+					transform: scale(1)
+					transition: .3s all ease-in-out
+					filter: grayscale(100%)
+				&:hover
+					img
+						transform: scale(1.13)
+						filter: grayscale(0%)

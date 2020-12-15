@@ -1,0 +1,99 @@
+.home_s-7
+	.home-news-swiper-wrapper
+		position: relative
+		margin-top: 7rem
+		@media screen and ( max-width: 1024.98px )
+			margin-top: 3rem
+		@media screen and ( max-width: 576px )
+			margin-top: 0
+	.nav-arrow-prev,.nav-arrow-next
+		position: absolute
+		width: 40px
+		height: 40px
+		top: 30%
+		display: flex
+		justify-content: center
+		align-items: center
+		transition: .3s all  ease-in-out
+		border: none
+		@media screen and ( max-width: 400px )
+			top: 40%
+		&:hover,&:focus
+			em
+				color: #ffffff
+		em
+			transition: .3s all  ease-in-out
+			font-size: 3.6rem
+			color: #ffffff
+	.nav-arrow-next
+		right: -60px
+		@media screen and ( max-width: 1439px)
+			right: -45px
+		@media screen and ( max-width: 1350px)
+			right: 0
+			
+		@media screen and ( max-width: 767px)
+			right: 15px
+		@media screen and ( max-width: 576px)
+			right: 0
+			
+	.nav-arrow-prev
+		left: -60px
+		@media screen and ( max-width: 1439px)
+			left: -45px
+		@media screen and ( max-width: 1350px)
+			left: 0
+		@media screen and ( max-width: 767px)
+			left: 15px
+		@media screen and ( max-width: 576px)
+			left: 0
+	.swiper-container
+		margin: 0
+		@media screen and ( max-width: 1350px)
+			margin: 0 50px
+	.swiper-slide
+		display: flex
+		justify-content: center
+		align-items: center
+		.wrapper
+			.news-img
+				a
+					display: block
+					max-width: 100%
+					width: 100%
+					max-height: 100%
+					height: 200px
+					border: 2px solid #ffffff
+					border-radius: .5rem
+					img
+						width: 100%
+						height: 100%
+			.content
+				text-align: center
+				padding-top: 1.2rem
+				cursor: pointer
+				.title-news
+					a
+						font-size: 1.8rem
+						color: #ffffff
+						font-weight: 600
+						text-align: center
+						-webkit-box-orient: vertical
+						-webkit-line-clamp: 2
+						-o-text-overflow: ellipsis
+						display: -webkit-box
+						overflow: hidden
+						text-overflow: ellipsis
+				.date
+					padding-top: 1.2rem
+					@media screen and ( max-width: 576px )
+						padding-top: 0
+					time
+						font-size: 1.4rem
+						color: #ffffff
+						text-align: center
+				&:hover
+					.title-news
+						a
+							text-decoration-line: underline
+						

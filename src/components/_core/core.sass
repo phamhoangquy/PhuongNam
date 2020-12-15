@@ -1,0 +1,30 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: "Lato-regular", sans-serif
+    color: #111111
+    &:focus
+        outline: none !important
+
+html 
+    font-size: 8px
+    @media(min-width: 1024px)
+        font-size: 9px
+    @media(min-width: 1280px)
+        font-size: 10px
+
+.home-page
+    main
+        background-image: url("../img/bg-home.jpg")
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+
+@mixin center
+    display: flex
+    justify-content: center
+    align-items: center
+
+.container
+    max-width: 1230px
