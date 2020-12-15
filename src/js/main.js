@@ -114,3 +114,21 @@ function swiperInit() {
 
     });
 }
+
+window.onscroll = function() {
+    scrollFunction()
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        document.querySelector("header").style.top = "-50px"
+        document.querySelector(".header_logo a img").style.paddingTop = "40px";
+        document.querySelector(".header_logo a img").style.width = "85%";
+        document.querySelector(".header_logo a img").style.height = "85%";
+    } else {
+        document.querySelector("header").style.top = "0";
+        document.querySelector(".header_logo a img").style.paddingTop = "0";
+        document.querySelector(".header_logo a img").style.width = "100%";
+        document.querySelector(".header_logo a img").style.height = "100%";
+    }
+}
