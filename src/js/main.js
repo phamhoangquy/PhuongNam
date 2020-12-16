@@ -115,6 +115,42 @@ function swiperInit() {
         },
 
     });
+
+    var brandSwiper = new Swiper(".client-brand .swiper-container", {
+        // Optional parameters
+        speed: 1000,
+        autoplay: {
+            delay: 2000
+        },
+        navigation: {
+            nextEl: '.client-brand .nav-arrow-next',
+            prevEl: '.client-brand .nav-arrow-prev',
+        },
+        spaceBetween: 30,
+        breakpointsInverse: true,
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            400: {
+                slidesPerView: 1,
+
+            },
+            480: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 3,
+            },
+            1025: {
+                slidesPerView: 5,
+            },
+            1440: {
+                slidesPerView: 6,
+            },
+        },
+
+    });
 }
 
 window.onscroll = function() {
