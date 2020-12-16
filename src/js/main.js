@@ -151,6 +151,43 @@ function swiperInit() {
         },
 
     });
+
+    var brandSwiper = new Swiper(".service-detail .slide-srv-detail", {
+        // Optional parameters
+        speed: 1000,
+        spaceBetween: 5,
+        autoplay: {
+            delay: 2000,
+        },
+        navigation: {
+            nextEl: ".service-detail .nav-arrow-next",
+            prevEl: ".service-detail .nav-arrow-prev",
+        },
+        breakpointsInverse: true,
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            400: {
+                slidesPerView: 1,
+            },
+            480: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1025: {
+                slidesPerView: 2,
+            },
+            1440: {
+                slidesPerView: 3,
+            },
+            1600: {
+                slidesPerView: 2,
+            },
+        },
+    });
 }
 
 window.onscroll = function() {
