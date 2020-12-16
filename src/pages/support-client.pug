@@ -1,0 +1,11 @@
+extends _layout.pug
+
+block var
+	- var title = 'Hỗ trợ'
+	- var bodyClass = 'support-page'
+
+block main
+	include ../components/UI/top-banner/index.pug
+	include ../components/support-client/index.pug
+	include ../components/UI/pagination/index.pug
+
