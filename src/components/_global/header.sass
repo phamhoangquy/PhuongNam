@@ -28,12 +28,21 @@ header
 					width: auto
 					height: 150px
 					transition: .3s all ease-in-out
+				@media screen and ( max-width: 1280px )
+					margin-top: unset !important
+					img
+						width: 50% !important
+						height: 50% !important
+						padding-top: unset !important
 		.header_main
 			.header_top
 				display: flex
 				justify-content: flex-end
 				.search-icon
 					padding-right: 1.5rem
+					display: flex
+					justify-content: center
+					align-items: center
 					span
 						font-size: 1.8rem
 						color: #111111
@@ -64,17 +73,6 @@ header
 						img
 							width: 1.4rem
 							height: 1.4rem
-			.header_menu
-				display: flex
-				align-items: center
-				justify-self: center
-				padding-top: 3rem
-				.search-icon
-					cursor: pointer
-					span
-						font-size: 2rem
-						&:hover
-							// color: $main
 				.header_btn
 					width: 4rem
 					height: 4rem
@@ -87,6 +85,18 @@ header
 					display: none
 					@media screen and ( max-width: 1280px )
 						display: flex
+			.header_menu
+				display: flex
+				align-items: center
+				justify-self: center
+				padding-top: 3rem
+				.search-icon
+					cursor: pointer
+					span
+						font-size: 2rem
+						&:hover
+							// color: $main
+				
 	.nav-menu
 		display: flex
 		list-style: none

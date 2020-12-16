@@ -2,6 +2,8 @@ $(document).ready(function() {
     swiperInit();
     toggleMobileMenu();
     mappingMenu();
+    fancyboxModal();
+    toggleApplyForm();
 });
 
 function toggleMobileMenu() {
@@ -131,4 +133,26 @@ function scrollFunction() {
         document.querySelector(".header_logo a img").style.width = "100%";
         document.querySelector(".header_logo a img").style.height = "100%";
     }
+}
+
+function fancyboxModal() {
+    $(".button-apply a").click(function(e) {
+        e.preventDefault();
+        $.fancybox.open({
+            src: '#form-apply',
+            type: 'inline',
+            opts: {
+                afterShow: function(instance, current) {
+                    $(".fancybox-is-open").appendTo("main");
+                }
+            }
+        });
+        return false;
+    });
+}
+
+function toggleApplyForm() {
+    $(".apply-form .button-apply a").on("click", function() {
+        $(".form-apply").slideToggle();
+    });
 }
