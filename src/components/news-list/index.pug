@@ -1,0 +1,33 @@
+section.menu-list
+	.container
+		.head-menu
+			ul
+				li.active
+					a(href="#") Tin tức
+				li
+					a(href="#") Hình ảnh
+				li
+					a(href="#") Video
+
+section.news-list
+	.container
+		.row
+			-for(i=0; i<6; i++)
+				.col-12.col-md-6.col-lg-4
+					.block-news
+						.item_news_hover
+							.card_img
+								a(href="#")
+									img(src="./img/s-7/1.png", alt="")
+							.card_img_hover
+								.icon-hover
+									span.material-icons search
+						.content-news
+							.title-news
+								a(href="#") Tại sao bao bì giấy được ưu chuộng?
+							.desc-news
+								p Nếu sản phẩm của bạn đang cần tìm một mẫu bao bì giấy đẹp, chất lượng thì đừng bỏ lỡ những thông tin hữu ích sau đây nhé...
+							.icon-news
+								span.ri-calendar-2-line
+								.date
+									time 30/05/2017

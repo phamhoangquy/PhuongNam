@@ -1,0 +1,133 @@
+.news-list
+	padding: 6rem 0 0 0
+	.block-news
+		.item_news_hover
+			position: relative
+			cursor: pointer
+			.card_img
+				a
+					display: block
+					max-width: 100%
+					max-height: 100%
+					width: 100%
+					height: 260px
+					img
+						width: 100%
+						height: 100%
+						object-fit: cover
+			.card_img_hover
+				position: absolute
+				left: 50%
+				top: 50%
+				width: 0
+				height: 0
+				transform-origin: center
+				opacity: 0
+				visibility: hidden
+				transition: .2s all ease-in-out
+				pointer-events: none
+				.icon-hover 
+					display: flex
+					align-items: center
+					justify-content: center
+					height: 100%
+					visibility: hidden
+					opacity: 0
+					transition: .2s all ease-in-out
+					background-color: rgba(#f8a531,.6)
+					span
+						color: #ffffff
+			@media screen and (min-width: 1024px) 
+				&:hover 
+					.card_img_hover
+						visibility: visible
+						opacity: 1
+						top: 0
+						left: 0
+						height: 100%
+						width: 100%
+						.icon-hover 
+							opacity: 1
+							visibility: visible
+			@media(max-width: 1024.98px)
+				width: 100%
+				height: unset
+				.card_img_hover 
+					opacity: 1
+					visibility: visible
+					width: 100%
+					height: 100%
+					transform: none
+					top: 0
+					left: 0
+					border-radius: 10px
+					.icon-hover 
+						opacity: 1
+						visibility: visible
+			@media(max-width: 576px) 
+				width: 100%
+				height: unset
+				.card_img_hover
+					opacity: 1
+					visibility: visible
+					width: 100%
+					height: 100%
+					transform: none
+					top: 0
+					left: 0
+					border-radius: 10px
+					.icon-hover 
+						opacity: 1
+						visibility: visible
+
+	.content-news
+		padding: 3rem 0
+		.title-news
+			a
+				-webkit-box-orient: vertical
+				-webkit-line-clamp: 1
+				-o-text-overflow: ellipsis
+				display: -webkit-box
+				overflow: hidden
+				text-overflow: ellipsis
+				font-size: 16px
+				color: #0068b0
+				text-transform: uppercase
+				font-weight: 700
+				position: relative
+				height: 45px
+				&::before
+					content: ''
+					position: absolute
+					width: 40px
+					height: 4px
+					border-radius: 50px
+					background: #f8a531
+					left: 0
+					bottom: 0
+		.desc-news
+			padding-top: 1.5rem
+			-webkit-box-orient: vertical
+			-webkit-line-clamp: 3
+			-o-text-overflow: ellipsis
+			display: -webkit-box
+			overflow: hidden
+			text-overflow: ellipsis
+			p
+				font-size: 16px
+				color: #666666
+		.icon-news
+			display: flex
+			padding-top: 1rem
+			span
+				font-size: 16px
+				color: #111111
+				font-weight: 700
+				padding-right: .5rem
+			.date
+				time
+					font-size: 16px
+					color: #666666
+.news-list-page
+	.pages
+		margin-bottom: 6rem
