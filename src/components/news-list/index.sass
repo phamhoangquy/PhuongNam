@@ -37,7 +37,7 @@
 					background-color: rgba(#f8a531,.6)
 					span
 						color: #ffffff
-			@media screen and (min-width: 1024px) 
+			@media(min-width: 1024px) 
 				&:hover 
 					.card_img_hover
 						visibility: visible
@@ -83,9 +83,19 @@
 	.content-news
 		padding: 3rem 0
 		.title-news
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				width: 40px
+				height: 4px
+				border-radius: 50px
+				background: #f8a531
+				left: 0
+				bottom: -25%
 			a
 				-webkit-box-orient: vertical
-				-webkit-line-clamp: 1
+				-webkit-line-clamp: 2
 				-o-text-overflow: ellipsis
 				display: -webkit-box
 				overflow: hidden
@@ -94,19 +104,10 @@
 				color: #0068b0
 				text-transform: uppercase
 				font-weight: 700
-				position: relative
 				height: 45px
-				&::before
-					content: ''
-					position: absolute
-					width: 40px
-					height: 4px
-					border-radius: 50px
-					background: #f8a531
-					left: 0
-					bottom: 0
+				
 		.desc-news
-			padding-top: 1.5rem
+			padding-top: 2rem
 			-webkit-box-orient: vertical
 			-webkit-line-clamp: 3
 			-o-text-overflow: ellipsis
