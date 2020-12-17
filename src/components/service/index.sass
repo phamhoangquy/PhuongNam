@@ -16,7 +16,9 @@
 					height: 100%
 					object-fit: cover
 		.content-service
-			padding: 5rem 3rem
+			padding: 5rem 3rem 3rem
+			@media screen and ( max-width: 1024px )
+				padding: 5rem 3rem 0
 			text-align: center
 			position: relative
 			.icon-service
@@ -39,7 +41,9 @@
 				display: -webkit-box
 				overflow: hidden
 				text-overflow: ellipsis
-				height: 77px
+				height: 67px
+				@media screen and ( max-width: 1024px )
+					height: 58px
 			.caption-service
 				-webkit-box-orient: vertical
 				-webkit-line-clamp: 4
@@ -47,7 +51,8 @@
 				display: -webkit-box
 				overflow: hidden
 				text-overflow: ellipsis
-				height: 96px
+				height: 105px
+				padding-top: 1rem
 				p
 					font-size: 1.6rem
 					color: #333333
