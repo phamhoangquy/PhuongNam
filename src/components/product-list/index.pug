@@ -1,0 +1,79 @@
+section.product-list
+	.container
+		.head-title
+			img(src="./img/title/title-product.png", alt="")
+		.row
+			.col-12.col-md-3.col-lg-3
+				.item-product-left
+					.title-product Loại thùng
+					.choose-product
+						ul
+							li.active
+								a(href="#") Thùng carton 3 lớp
+							li
+								a(href="#") Thùng carton 5 lớp
+							li
+								a(href="#") Thùng carton 7 lớp
+							li
+								a(href="#") Hộp giấy
+				.item-product-color
+					.title-product Màu sắc
+					.color-product
+						ul
+							li.active.checkbox
+								input(type="checkbox" checked="checked")
+								span Trắng
+							li.checkbox
+								input(type="checkbox")
+								span Vàng
+							li.checkbox
+								input(type="checkbox")
+								span Nâu
+							li.checkbox
+								input(type="checkbox")
+								span Khác
+				.item-product-branch
+					.title-product Ngành hàng
+					.branch-product
+						ul
+							li.active.checkbox
+								input(type="checkbox" checked="checked")
+								span May mặc
+							li.checkbox
+								input(type="checkbox")
+								span Điện - Điện tử
+							li.checkbox
+								input(type="checkbox")
+								span Vât liệu xây dựng
+							li.checkbox
+								input(type="checkbox")
+								span Gỗ
+							li.checkbox
+								input(type="checkbox")
+								span Nội thất
+							li.checkbox
+								input(type="checkbox")
+								span Gia dụng
+							li.checkbox
+								input(type="checkbox")
+								span Khác
+			
+			.col-12.col-md-9.col-lg-9
+				.title-product-right Thùng carton 3 lớp
+				.row
+					-for (i=0; i<9; i++)
+						.col-12.col-md-6.col-lg-4
+							.item-product-right
+								.item__img
+									a(href="#")
+										img(src="./img/product/1.png", alt="")
+									.title-zone
+										.caption C3 - 01
+								.item__img-hover
+									.content
+										.img-hover
+											a(href="#")
+												img(src="./img/s-1/1.png", alt="")
+											.desc thùng carton 3 lớp
+					.btn-view
+						a(href="#") Xem thêm
