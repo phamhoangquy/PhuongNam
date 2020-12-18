@@ -1,0 +1,144 @@
+section.product-detail
+	.container
+		.row
+			.col-lg-7
+				.gallery-product-detail-slide
+					.swiper-container.gallery-top
+						.swiper-wrapper
+							.swiper-slide
+								img(src="./img/product/detail-1.png", alt="")
+							.swiper-slide
+								img(src="./img/product/detail-2.png", alt="")
+							.swiper-slide
+								img(src="./img/product/detail-1.png", alt="")
+							.swiper-slide
+								img(src="./img/product/detail-1.png", alt="")
+					.swiper-container.gallery-thumbs
+						.swiper-wrapper
+							.swiper-slide
+								img(src="./img/product/detail-1.png", alt="")
+							.swiper-slide
+								img(src="./img/product/detail-2.png", alt="")
+							.swiper-slide
+								img(src="./img/product/detail-1.png", alt="")
+							.swiper-slide
+								img(src="./img/product/detail-1.png", alt="")
+						.nav-arrow-prev
+							em.lnr.lnr-chevron-left
+						.nav-arrow-next
+							em.lnr.lnr-chevron-right
+			.col-lg-5
+				.item-desc-pro-detail
+					.title C3 - 01
+					.table-pro-detail
+						table.table.table-striped
+							tbody
+								tr
+									th(scope='row') Màu sắc
+									|
+									td Vàng
+								|
+								tr
+									th(scope='row') Dạng sóng
+									|
+									td Sóng C, Sóng B, Sóng E
+								|
+								tr
+									th(scope='row') Quy cách
+									|
+									td Sản xuất kích thước theo yếu cầu
+								|
+								tr
+									th(scope='row') Số lượng
+									|
+									td Không giới hạn (nhận sx sỉ và lẻ)
+								tr
+									th(scope='row') Định lượng giấy
+									|
+									td Theo yêu cầu g/m2
+								|
+								tr
+									th(scope='row') Xuất sứ
+									|
+									td Việt Nam, Đoàn Loan, Thái,...
+								|
+								tr
+									th(scope='row') Kiểu thùng
+									|
+									td Thùng thường (RSC), Nắp chồng, Âm dương, thùng bế,...
+								|
+								tr
+									th(scope='row') Các loại giấy
+									|
+									td "1 vàng 2 xeo" - "2 vàng 1 xeo" - "1 trắng 1 xeo" - "2 trắng 1 xeo".
+								tr
+									th(scope='row') In ấn
+									|
+									td Theo yếu cầu (1-6 màu, In offset, in flexo)
+								|
+								tr
+									th(scope='row') Hoàn thiện
+									|
+									td Cán màng mờ, màng bóng và tạo cảm giác sang trọng, cao cấp, tăng khả năng chống thắm nước
+					.contact-pro-detail
+						span.ri-phone-line
+						a(href="#") Liên hệ
+		.fullcontent-pro-detail
+			.title Ứng dụng
+			.caption-pro-detail
+				p Thùng carton 3 lớp mã C3 - 01 được sản xuất để sử dụng cho những loại hàng hóa có khối lượng và trọng lượng tương đối nhỏ, gọn. Các sản phẩm bao bì phụ trợ như: Tấm lót, vách ngăn và nẹp góc bên trong thường được sản xuất từ các tấm các tông 3 lớp
+				.img
+					img(src="./img/product/detail-3.png", alt="")
+				.img
+					img(src="./img/product/detail-3.png", alt="")
+				.img
+					img(src="./img/product/detail-3.png", alt="")
+
+section.product-detail-2
+	.container
+		.head-title
+			img(src="./img/title/information.png", alt="")
+		.row
+			.col-lg-8
+				.wrap-form
+					.row
+						.form-group.col-12.col-md-6.col-6
+							input.form-control(type='text', placeholder="Họ và tên...")
+						.form-group.col-12.col-md-6.col-6
+							input.form-control(type='text',placeholder="Công ty...")
+						.form-group.col-12.col-md-6.col-6
+							input.form-control(type='text',placeholder="Số điện thoại...")
+						.form-group.col-12.col-md-6.col-6
+							input.form-control(type='text',placeholder="Email...")
+						.form-group.col-12
+							textarea#inpputTextArea.form-control(rows='3',placeholder="Nội dung...")
+					.frm-btnwrap
+						.frm-btn
+							a(href="") GỬI
+								span.material-icons trending_flat
+
+section.product-detail-3
+	.container
+		.head-title
+			img(src="./img/title/title-other-pro.png", alt="")
+		.detail-slide-3-swiper-wrapper
+			.nav-arrow-prev
+				em.lnr.lnr-chevron-left
+			.nav-arrow-next
+				em.lnr.lnr-chevron-right
+			.swiper-container
+				.swiper-wrapper
+					-for (i=0; i<3; i++)
+						.swiper-slide
+							.item-product-detail
+								.item__img
+									a(href="#")
+										img(src="./img/product/1.png", alt="")
+									.title-zone
+										.caption C3 - 01
+								.item__img-hover
+									.content
+										.img-hover
+											a(href="#")
+												img(src="./img/s-1/1.png", alt="")
+											.desc thùng carton 3 lớp
