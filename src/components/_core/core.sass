@@ -15,11 +15,23 @@ html
         font-size: 10px
 
 .home-page
-    main
-        background-image: url("../img/bg-home.jpg")
-        background-position: center
-        background-repeat: no-repeat
-        background-size: cover
+    footer
+        margin-top: -35rem
+        @media screen and ( max-width: 1024px )
+            margin-top: -40rem
+            .footer-policy
+                padding-top: 10rem
+        @media screen and ( max-width: 576px )
+            margin-top: -52rem
+            .footer-policy
+                padding-top: 35rem
+.product-detail-page
+    footer
+        margin-top: -35rem
+        @media screen and ( max-width: 576px )
+            margin-top: -40rem
+main
+    padding-bottom: 15rem
 
 @mixin center
     display: flex

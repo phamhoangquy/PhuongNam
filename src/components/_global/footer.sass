@@ -4,8 +4,15 @@ footer
 	background-repeat: no-repeat
 	background-size: cover
 	padding-top: 15rem
-	margin-top: -15rem
+	margin-top: -20rem
+	pointer-events: none
+	@media screen and ( max-width: 576px )
+		margin-top: -27rem
+		padding-top: 0
 	.footer-policy
+		padding-top: 6rem
+		@media screen and ( max-width: 576px )
+			padding-top: 25rem
 		.list-policy
 			.item-policy
 				ul
