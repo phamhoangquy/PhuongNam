@@ -116,6 +116,7 @@
 				img
 					width: 100%
 
+// section-2
 .product-detail-2
 	padding: 5rem 0
 	.row
@@ -197,14 +198,19 @@
 				height: 8em
 				padding: 10px 0 0 20px
 
+// section-3
 .product-detail-3
 	background-image: url("../img/product/bg-detail-2.png")
 	background-position: center
 	background-repeat: no-repeat
 	background-size: cover
-	padding: 3rem 0 0 0
+	padding: 6rem 0 0 0
 	position: relative
-	min-height: 900px
+	min-height: 816px
+	@media screen and ( max-width: 998.98px )
+		min-height: 650px
+	@media screen and ( max-width: 576px )
+		min-height: 510px
 	&:before
 		content: ''
 		display: block
