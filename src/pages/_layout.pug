@@ -18,12 +18,12 @@ html(lang="en")
 
 	body(class=bodyClass)
 		block header
-			include ../components/_global/header.pug
+			include ../components/_global/header/header.pug
 		main
 			block main
 		block footer
-			include ../components/_global/footer.pug
-		include ../components/_global/tool.pug
-		include ../components/_global/back_to_top.pug
+			include ../components/_global/footer/footer.pug
+		include ../components/_global/tool/tool.pug
+		include ../components/_global//back-top/back_to_top.pug
 		script(src="./js/core.min.js")
 		script(src="./js/main.min.js")
