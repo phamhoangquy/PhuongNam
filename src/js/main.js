@@ -6,6 +6,7 @@ $(document).ready(function() {
     about4();
     fancyboxModal();
     toggleApplyForm();
+    showBackToTop();
 });
 
 function toggleMobileMenu() {
@@ -438,4 +439,21 @@ function toggleApplyForm() {
     $(".apply-form .button-apply a").on("click", function() {
         $(".form-apply").slideToggle();
     });
+}
+
+function showBackToTop() {
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 0) {
+            $('#back-to-top').addClass('active');
+        } else {
+            $('#back-to-top').removeClass('active');
+        }
+    });
+
+    $("#back-to-top").on("click", function(e) {
+        e.preventDefault();
+        $("html,body").animate({
+            scrollTop: 0
+        })
+    })
 }
