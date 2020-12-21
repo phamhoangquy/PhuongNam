@@ -3,6 +3,7 @@ $(document).ready(function() {
     toggleMobileMenu();
     mappingMenu();
     projectDetailSlide();
+    about4();
     fancyboxModal();
     toggleApplyForm();
 });
@@ -358,6 +359,44 @@ function swiperInit() {
             },
         },
 
+    });
+
+}
+
+function about4() {
+    var mySwiper = new Swiper(".about-4 .factory-slide", {
+        spaceBetween: 15,
+        centeredSlides: true,
+        roundLengths: true,
+        loop: true,
+        loopAdditionalSlides: 30,
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            400: {
+                slidesPerView: 1,
+            },
+            480: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 1,
+            },
+            1025: {
+                slidesPerView: 3,
+            },
+            1440: {
+                slidesPerView: 3,
+            },
+            1920: {
+                slidesPerView: 3,
+            },
+        },
+        navigation: {
+            nextEl: '.about-4 .nav-arrow-next',
+            prevEl: '.about-4 .nav-arrow-prev',
+        },
     });
 }
 
