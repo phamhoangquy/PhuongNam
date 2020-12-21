@@ -252,6 +252,113 @@ function swiperInit() {
 
     });
 
+    var brandSwiper = new Swiper(".about-5 .swiper-container", {
+        // Optional parameters
+        speed: 1000,
+        autoplay: {
+            delay: 2000
+        },
+        navigation: {
+            nextEl: '.about-5 .nav-arrow-next',
+            prevEl: '.about-5 .nav-arrow-prev',
+        },
+        spaceBetween: 30,
+        breakpointsInverse: true,
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            400: {
+                slidesPerView: 1,
+
+            },
+            480: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 3,
+            },
+            1025: {
+                slidesPerView: 4,
+            },
+            1440: {
+                slidesPerView: 4,
+            },
+        },
+
+    });
+
+    var brandSwiper = new Swiper(".about-6 .slide-prize", {
+        // Optional parameters
+        speed: 1000,
+        autoplay: {
+            delay: 2000
+        },
+        navigation: {
+            nextEl: '.about-6 .nav-arrow-next',
+            prevEl: '.about-6 .nav-arrow-prev',
+        },
+        spaceBetween: 30,
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            400: {
+                slidesPerView: 1,
+            },
+            480: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 1,
+            },
+            1025: {
+                slidesPerView: 1,
+            },
+            1440: {
+                slidesPerView: 2,
+            },
+            1600: {
+                slidesPerView: 2,
+            },
+        },
+    });
+
+    var brandSwiper = new Swiper(".about-7 .swiper-container", {
+        // Optional parameters
+        speed: 1000,
+        // autoplay: {
+        //     delay: 2000
+        // },
+        navigation: {
+            nextEl: '.about-7 .nav-arrow-next',
+            prevEl: '.about-7 .nav-arrow-prev',
+        },
+        spaceBetween: 30,
+        breakpointsInverse: true,
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            400: {
+                slidesPerView: 1,
+
+            },
+            480: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 3,
+            },
+            1025: {
+                slidesPerView: 6,
+            },
+            1440: {
+                slidesPerView: 6,
+            },
+        },
+
+    });
 }
 
 window.onscroll = function() {
