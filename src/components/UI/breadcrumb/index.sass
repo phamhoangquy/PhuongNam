@@ -1,58 +1,38 @@
-.global-breadcrumb
-	position: relative
-	z-index: 1
-	margin-top: -5.4rem
-	padding-left: 278px
-	top: -180px
-	ol
-		white-space: nowrap
-		padding: 0
-		list-style-type: none
-		li
-			display: inline-flex
-			font-size: 16px
-			line-height: 23px
-			padding-right: 20px
-			position: relative
-			&:first-child
-				display: block
-				a
-					color: #0068b0
-					font-weight: 700
-					font-size: 3.6rem
-				&::before
-					display: none
-			a
-				text-decoration: none
-				font-size: 1.4rem
-				line-height: 23px
-				color: #0068b0
-			&:before
-				content: ''
-				position: absolute
-				pointer-events: none
-				right: 0
-				z-index: 9
-				transition: .3s all ease-in-out
-				font-family: "Linearicons-Free"
-				content: '\e876'
-				font-size: 1.2rem
-				color: #0068b0
-			&:last-child
-				&:after
-					display: none
+ol.breadcrumb
+	display: flex
+	align-items: center
+	list-style: none
+	padding: 0 6px
+	li
+		display: flex
+		position: relative
+		align-items: center
+		padding: 0 10px
+		&:first-child
+			padding: 0 10px 0 0
+		a
+			color: #0066b3
+			font-weight: 400
+			font-size: r(15px)
 			&.active
-				color: #0068b0
-
-	@media screen and(max-width: 768px)
-		margin-bottom: 0
-	@media screen and(max-width: 576px)
-		.breadcrumb
-			li
-				font-size: 14px
-				line-height: 22px
-				a
-					font-size: 13px
-					line-height: 22px
-					span
-						font-size: 13px
+				color: #0066b3
+		// &:first-child
+		// 	padding-left: 0
+		// 	// font-size: 0
+		// 	a
+		// 		font-size: 0
+		// 		&::before
+		// 			// font-family: remixicon!important
+		// 			// content: "\ee22"
+		// 			// font-size: r(18px)
+		// 			// color: #0066b3
+		+ li
+			&::before
+				font-family: remixicon!important
+				content: "\EA6E"
+				top: 50%
+				transform: translateY(-50%)
+				left: -9px
+				position: absolute
+				color: #0066b3
+				font-size: r(20px)

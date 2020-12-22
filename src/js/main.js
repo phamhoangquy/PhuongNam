@@ -6,8 +6,13 @@ $(document).ready(function() {
     about4();
     fancyboxModal();
     toggleApplyForm();
+    InsertBd();
     showBackToTop();
 });
+
+const InsertBd = () => {
+    $(".breadcrumb-wrapper").appendTo("#pagebanner .box-text");
+};
 
 function toggleMobileMenu() {
     $('.header_btn').click(function() {
