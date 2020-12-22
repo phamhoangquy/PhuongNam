@@ -8,6 +8,8 @@ header
 	transition: .3s all ease-in-out
 	@media screen and ( max-width: 1280px )
 		top: 0 !important
+		background: rgba(#ffffff, .5) !important
+		background: #ffffff !important
 		box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.05)
 		.header_main
 			.header_top
@@ -96,6 +98,8 @@ header
 						font-size: 2rem
 						&:hover
 							// color: $main
+				@media screen and ( max-width:1280px  )
+					display: none
 				
 	.nav-menu
 		display: flex
@@ -137,6 +141,7 @@ header
 					&:after
 						width: 100%
 			&.active
+				background: none
 				a
 					color: #f8a531
 					padding-bottom: .3rem
@@ -259,3 +264,17 @@ header
 	.overlay.show
 		@media screen and ( max-width: 1280px )
 			display: block
+
+// Scroll
+.header-scroll
+	transition: .3s all ease-in-out
+	background: rgba(#ffffff, .9)
+	.header
+		padding-bottom: 20px
+		.header_logo
+			a
+				display: block
+				margin-top: 0
+				img
+					width: auto
+					height: 80px

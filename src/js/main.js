@@ -10,6 +10,16 @@ $(document).ready(function() {
     showBackToTop();
 });
 
+window.onscroll = function() {
+    header.headerScroll()
+};
+let header = {
+    headerScroll: () => {
+        let heightHeader = $('header').height();
+        $(window).scrollTop() > heightHeader ? $('header').addClass('header-scroll') : $('header').removeClass('header-scroll');
+    }
+}
+
 const InsertBd = () => {
     $(".breadcrumb-wrapper").appendTo("#pagebanner .box-text");
 };
@@ -407,24 +417,6 @@ function about4() {
             prevEl: '.about-4 .nav-arrow-prev',
         },
     });
-}
-
-window.onscroll = function() {
-    scrollFunction()
-};
-
-function scrollFunction() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        document.querySelector("header").style.top = "-50px"
-        document.querySelector(".header_logo a img").style.paddingTop = "40px";
-        document.querySelector(".header_logo a img").style.width = "85%";
-        document.querySelector(".header_logo a img").style.height = "85%";
-    } else {
-        document.querySelector("header").style.top = "0";
-        document.querySelector(".header_logo a img").style.paddingTop = "0";
-        document.querySelector(".header_logo a img").style.width = "100%";
-        document.querySelector(".header_logo a img").style.height = "100%";
-    }
 }
 
 function fancyboxModal() {
