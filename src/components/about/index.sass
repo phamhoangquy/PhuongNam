@@ -129,7 +129,11 @@
 		text-align: center
 	.about-factory-swiper-wrapper
 		position: relative
-		
+		margin-top: 7rem
+		@media screen and ( max-width: 1024px )
+			margin-top: 3rem
+		@media screen and ( max-width: 576px )
+			margin-top: 3rem
 	.nav-arrow-prev,.nav-arrow-next
 		position: absolute
 		width: 40px
@@ -149,6 +153,7 @@
 		em
 			transition: .3s all  ease-in-out
 			font-size: 3.6rem
+			color: #ffffff
 	.nav-arrow-next
 		right: -60px
 		@media screen and ( max-width: 1350px)
@@ -190,7 +195,7 @@
 
 // section-5
 .about-5
-	padding-top: 9rem
+	padding: 6rem 0
 	@media screen and ( max-width: 576px )
 		padding-top: 3rem
 	.title-about-5
@@ -216,6 +221,7 @@
 				padding-bottom: 2rem
 	.about-news-swiper-wrapper
 		position: relative
+		margin-top: 3rem
 	.nav-arrow-prev,.nav-arrow-next
 		position: absolute
 		width: 40px
@@ -284,6 +290,13 @@
 
 // section-6
 .about-6
+	background-image: url("../img/about/bg-big-about-3.png")
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	padding: 6rem 0 12rem 0
+	@media screen and ( max-width: 576px )
+		padding: 3rem 0
 	.about-prize-swiper-wrapper
 		position: relative
 	.nav-arrow-prev,.nav-arrow-next
@@ -301,9 +314,8 @@
 			color: #00415f
 		em
 			transition: .3s all  ease-in-out
-			color: #707070
-			font-size: 30px
-			color: #999999
+			font-size: 3.6rem
+			color: #ffffff
 			&:hover
 				color: #00415f
 	.nav-arrow-prev,.nav-arrow-next
@@ -358,14 +370,14 @@
 
 // section-7
 .about-7
-	padding-top: 7.5rem
+	background-image: url("../img/about/bg-big-about-4.png")
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	padding: 7.5rem 0 10rem 0
+	margin-top: -7rem
 	.about-client-swiper-wrapper
 		position: relative
-		margin-top: 7rem
-		@media screen and ( max-width: 1024.98px )
-			margin-top: 3rem
-		@media screen and ( max-width: 576px )
-			margin-top: 0
 	.nav-arrow-prev,.nav-arrow-next
 		position: absolute
 		width: 40px
@@ -385,6 +397,7 @@
 		em
 			transition: .3s all  ease-in-out
 			font-size: 3.6rem
+			color: #ffffff
 	.nav-arrow-next
 		right: -60px
 		@media screen and ( max-width: 1350px)

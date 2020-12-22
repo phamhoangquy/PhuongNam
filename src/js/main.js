@@ -312,15 +312,18 @@ function swiperInit() {
                 slidesPerView: 1,
             },
             768: {
-                slidesPerView: 1,
+                slidesPerView: 2,
             },
             1025: {
-                slidesPerView: 1,
+                slidesPerView: 2,
             },
             1440: {
                 slidesPerView: 2,
             },
             1600: {
+                slidesPerView: 2,
+            },
+            1920: {
                 slidesPerView: 2,
             },
         },
