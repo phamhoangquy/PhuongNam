@@ -57,11 +57,7 @@
 								<div class="header_top">
 									<div class="search-icon"><span class="ri-search-2-line"></span></div>
 									<div class="language">
-										<div class="img-lange"><img src="./img/icon-vn.png" alt=""></div><a
-											class="current">VN<span class="ri-arrow-down-s-fill"></span></a>
-										<ul class="drop-down">
-											<li><a>EN</a></li>
-										</ul>
+										<portal:modulewrapper id="mdl160" runat="server" configuremoduleid="160" />
 									</div>
 									<div class="header_btn"><span class="ri-menu-line"></span></div>
 								</div>
@@ -74,8 +70,7 @@
 					<div class="block_search">
 						<div class="search-icon"><span class="ri-close-line"></span></div>
 						<div class="search_box">
-							<input type="text" placeholder="Tìm kiếm">
-							<button class="ri-search-line" type="submit"></button>
+						<portal:modulewrapper id="mdl161" runat="server" configuremoduleid="161" />
 						</div>
 					</div>
 					<div class="menu_mobile">
@@ -130,40 +125,14 @@
 								<div class="col-lg-10">
 									<div class="item-address">
 										<div class="list-address">
-											<ul>
-												<li>
-													<p>Công Ty TNHH SX TM Bao Bì Phương Nam</p>
-												</li>
-												<li>
-													<p>Mã số thuế: 0301515210</p>
-												</li>
-												<li>
-													<div class="caption-web">
-														<div class="text-web">Website:</div>
-														<div class="link-web"><a
-																href="#">http://phuongnampacking.com/</a></div>
-													</div>
-												</li>
-											</ul>
+											<portal:modulewrapper id="mdl153" runat="server" configuremoduleid="153" />
+											
 										</div>
 									</div>
 									<div class="item-address-2">
 										<div class="list-address-2">
-											<ul>
-												<li>
-													<div class="caption-email">
-														<div class="text-email">Email:</div>
-														<div class="link-email"><a href="#">phuongnambaobi@gmail.com</a>
-														</div>
-													</div>
-												</li>
-												<li>
-													<p>Điện thoại: (+84) 37961762 - 37961763 - 37963644 - 37962812</p>
-												</li>
-												<li>
-													<p>Fax: (+84) 37967161 - 37963643</p>
-												</li>
-											</ul>
+											<portal:modulewrapper id="mdl154" runat="server" configuremoduleid="154" />
+											
 										</div>
 									</div>
 								</div>
@@ -175,75 +144,33 @@
 							<div class="footer-block">
 								<div class="item-office">
 									<div class="icon-office">
-										<a href="#"><img src="./img/item-footer.png" alt=""></a>
+										<a href="#"><img src="/Data/Sites/1/skins/default/img/item-footer.png" alt=""></a>
 									</div>
 									<div class="text-office">
-										<ul>
-											<li>
-												<div class="office">
-													<div class="icon-office"><span class="ri-building-4-line"></span>
-													</div>
-													<div class="caption">Văn Phòng Chính </div>
-												</div>
-												<div class="caption-office">
-													<p>KCN Tân Phú Trung, Huyện cũ chi, TPHCM</p>
-												</div>
-											</li>
-											<li>
-												<div class="office">
-													<div class="icon-office"><span class="ri-phone-line"></span></div>
-												</div>
-												<div class="caption-office">
-													<p>0985.192.605</p>
-												</div>
-											</li>
-										</ul>
+									<portal:modulewrapper id="mdl155" runat="server" configuremoduleid="155" />
+										
 									</div>
 								</div>
 								<div class="item-office">
 									<div class="icon-office">
-										<a href="#"><img src="./img/item-footer.png" alt=""></a>
+										<a href="#"><img src="/Data/Sites/1/skins/default/img/item-footer.png" alt=""></a>
 									</div>
 									<div class="text-office">
-										<ul>
-											<li>
-												<div class="office">
-													<div class="icon-office"><span class="ri-building-4-line"></span>
-													</div>
-													<div class="caption">Văn Phòng Chính </div>
-												</div>
-												<div class="caption-office">
-													<p>KCN Tân Phú Trung, Huyện cũ chi, TPHCM</p>
-												</div>
-											</li>
-											<li>
-												<div class="office">
-													<div class="icon-office"><span class="ri-phone-line"></span></div>
-												</div>
-												<div class="caption-office">
-													<p>0985.192.605</p>
-												</div>
-											</li>
-										</ul>
+									<portal:modulewrapper id="mdl156" runat="server" configuremoduleid="156" />
+									
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="container">
 							<div class="link-copyright">
-								<ul>
-									<li><a href="#"><span class="ri-facebook-fill"></span></a></li>
-									<li><a href="#"><span class="ri-linkedin-fill"></span></a></li>
-									<li><a href="#"><span class="ri-youtube-fill"></span></a></li>
-								</ul>
+								<portal:modulewrapper id="mdl157" runat="server" configuremoduleid="157" />
+								
 							</div>
 							<div class="copyright">
-								<p>© 2020 Phuong Nam Packing. Thiết kế website bởi cánh cam.</p>
-								<ul>
-									<li><a href="#">Điều khoản sử dụng</a></li>
-									<li><a href="#">Chính sách bảo mật</a></li>
-									<li><a href="#">Sơ đồ trang web</a></li>
-								</ul>
+							<portal:modulewrapper id="mdl158" runat="server" configuremoduleid="158" />
+								
+								
 							</div>
 						</div>
 					</div>

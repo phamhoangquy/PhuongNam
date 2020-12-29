@@ -12,7 +12,14 @@
                     </div>
                 </div>
                 <div class="img-clouds">
-                    <img src="./img/may.png" alt=""/>
+                    <img src="/Data/Sites/1/skins/default/img/may.png" alt=""/>
+                </div>
+            </div>
+        </section>
+        <section class="bg-img-clouds">
+            <div class="clouds-img">
+                <div class="img">
+                    <img src="/Data/Sites/1/skins/default/img/clouds.png" alt=""/>
                 </div>
             </div>
         </section>
