@@ -7,7 +7,10 @@ $(document).ready(function() {
     fancyboxModal();
     toggleApplyForm();
     InsertBd();
+    InsertBdTitle();
     coutingNumber();
+    Showmap();
+    appendRecruit();
     showBackToTop();
 });
 
@@ -24,6 +27,27 @@ let header = {
 const InsertBd = () => {
     $(".breadcrumb-wrapper").appendTo("#pagebanner .box-text");
 };
+
+const InsertBdTitle = () => {
+    $(".title-line").insertBefore(".breadcrumb-wrapper");
+};
+
+function Showmap() {
+    $(".branch-one ul li").click(function() {
+        $(this).addClass("active");
+        var datahref = $(this).attr("data-href");
+        $(".map-wrapper")
+            .find("iframe")
+            .attr("src", function() {
+                return datahref;
+            });
+        $(".branch-one ul li").not(this).removeClass("active");
+    });
+}
+
+function appendRecruit() {
+    $('#infor-box').appendTo('.recruitment-detail #infor-inner')
+}
 
 function toggleMobileMenu() {
     $('.header_btn').click(function() {
