@@ -1,326 +1,328 @@
-<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="~/App_MasterPages/layout.Master.cs" Inherits="CanhCam.Web.layout" %>
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="~/App_MasterPages/layout.Master.cs"
+	Inherits="CanhCam.Web.layout" %>
 
-    <!DOCTYPE html>
-    <html id="Html1" runat="server">
+	<!DOCTYPE html>
+	<html id="Html1" runat="server">
 
-    <head id="Head1" runat="server">
-        <title></title>
-        <portal:MetaContent ID="MetaContent" runat="server" />
-        <%-- JQueryUIThemeName themes: 
-	base, black-tie, blitzer, cupertino, dark-hive, dot-luv, eggplant, excite-bike, flick, hot-sneaks,
-	humanity, le-frog, mint-choc, overcast, pepper-grinder,
-	redmond, smoothness, south-street, start, sunny, swanky-purse, trontastic, ui-darkness, ui-lightness, vader
-    --%>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-            <!--[if lt IE 9]>
-        <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-            <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap" rel="stylesheet">
-            <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-            <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-            <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-            <portal:StyleSheetCombiner ID="StyleSheetCombiner" runat="server" IncludejQueryUI="false" JQueryUIThemeName="smoothness" />
-            <portal:Favicon ID="Favicon1" runat="server" />
-            <portal:ScriptLoader ID="ScriptLoader1" runat="server" />
-            <portal:SkinFolderScript ID="SkinFolderScript1" runat="server" ScriptFileName="js/plugins.min.js" AddToCombinedScript="true" />
-            <portal:SkinFolderScript ID="SkinFolderScript2" runat="server" ScriptFileName="js/customize.min.js" AddToCombinedScript="true" />
-            <portal:SkinFolderScript ID="SkinFolderScript3" runat="server" ScriptFileName="js/canhcam.js" AddToCombinedScript="true" />
-            <portal:GoogleAnalyticsScript ID="GoogleAnalyticsScript1" runat="server" />
+	<head id="Head1" runat="server">
+		<title></title>
+		<portal:MetaContent ID="MetaContent" runat="server" />
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,700;1,900&display=swap"
+			rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+		<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+		<portal:StyleSheetCombiner ID="StyleSheetCombiner" runat="server" IncludejQueryUI="false"
+			JQueryUIThemeName="smoothness" />
+		<portal:Favicon ID="Favicon1" runat="server" />
+		<portal:ScriptLoader ID="ScriptLoader1" runat="server" />
+		<portal:SkinFolderScript ID="SkinFolderScript1" runat="server" ScriptFileName="js/plugins.min.js"
+			AddToCombinedScript="true" />
+		<portal:SkinFolderScript ID="SkinFolderScript2" runat="server" ScriptFileName="js/customize.min.js"
+			AddToCombinedScript="true" />
+		<portal:SkinFolderScript ID="SkinFolderScript3" runat="server" ScriptFileName="js/canhcam.js"
+			AddToCombinedScript="true" />
+		<portal:GoogleAnalyticsScript ID="GoogleAnalyticsScript1" runat="server" />
 
-            <!--*********************************************************************************************-->
-            <!-- Canh Cam - the best Web Solutions Provider - http://www.canhcam.vn                          -->
-            <!-- 156 Nguyen Van Thu, District 1, Ho Chi Minh City, Viet Nam.                                 -->
-            <!-- Phone: (+84) 8 38238364 – Fax: (+84) 8 38238365 - Email: info@canhcam.vn                    -->
-            <!-- Facebook: https://www.facebook.com/canhcam.vn                                               -->
-            <!--*********************************************************************************************-->
-    </head>
+		<!--*********************************************************************************************-->
+		<!-- Canh Cam - the best Web Solutions Provider - http://www.canhcam.vn                          -->
+		<!-- 156 Nguyen Van Thu, District 1, Ho Chi Minh City, Viet Nam.                                 -->
+		<!-- Phone: (+84) 8 38238364 – Fax: (+84) 8 38238365 - Email: info@canhcam.vn                    -->
+		<!-- Facebook: https://www.facebook.com/canhcam.vn                                               -->
+		<!--*********************************************************************************************-->
+	</head>
 
-    <body id="Body" runat="server" class="canhcam">
-        <portal:FacebookSdk ID="fbsdk" runat="server" />
-        <portal:LayoutDisplaySettings ID="LayoutDisplaySettings1" runat="server" />
-        <form id="frmMain" runat="server">
-            <asp:SiteMapDataSource ID="SiteMapData" runat="server" ShowStartingNode="false" />
-            <asp:SiteMapDataSource ID="PageMapDataSource" runat="server" ShowStartingNode="false" />
-            <asp:SiteMapDataSource ID="ChildPageSiteMapData" runat="server" ShowStartingNode="false" />
-            <asp:ScriptManager ID="ScriptManager1" EnablePageMethods="true" runat="server" />
-            <div id="wrapper">
-                <header>
-                    <div class="container">
-                        <div class="header">
-                            <div class="header_logo">
-                                <portal:modulewrapper id="mdl138" runat="server" configuremoduleid="138" />
-                            </div>
-                            <div class="header_main">
-                                <div class="header_top">
-                                    <div class="search-icon"><span class="ri-search-2-line"></span></div>
-                                    <div class="language">
-                                        <div class="img-lange"><img src="./img/icon-vn.png" alt=""></div><a class="current">VN<span class="ri-arrow-down-s-fill"></span></a>
-                                        <ul class="drop-down">
-                                            <li><a>EN</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="header_btn"><span class="ri-menu-line"></span></div>
-                                </div>
-                                <div class="header_menu">
-                                    <portal:modulewrapper id="mdl139" runat="server" configuremoduleid="139" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="block_search">
-                        <div class="search-icon"><span class="ri-close-line"></span></div>
-                        <div class="search_box">
-                            <input type="text" placeholder="Tìm kiếm">
-                            <button class="ri-search-line" type="submit"></button>
-                        </div>
-                    </div>
-                    <div class="menu_mobile">
-                        <div class="header_btn"><span class="ri-close-line"></span></div>
-                        <div class="mobile-wrapper"></div>
-                    </div>
-                    <div class="overlay"></div>
-                </header>
-                <main class="main">
-                    <asp:Panel ID="divLeft" runat="server" CssClass="leftside" Visible="True" SkinID="pnlPlain">
-                        <%--<portal:PageMenu ID="PageMenu1" IsSubMenu="true" MaxDataRenderDepth="-1" StartingNodeOffset="-1" xsltFileName="LeftMenu.xslt" runat="server" />--%>
-                            <asp:ContentPlaceHolder ID="leftContent" runat="server">
-                            </asp:ContentPlaceHolder>
-                    </asp:Panel>
-                    <asp:Panel ID="divCenter" runat="server" Visible="True" CssClass="center-rightandleftmargins" SkinID="pnlPlain">
-                        <%--<portal:Breadcrumbs ID="Breadcrumbs" WrapperCssClass="breadcrum" Separator="<li class='separate'>»</li>" runat="server"></portal:Breadcrumbs>--%>
-                            <asp:ContentPlaceHolder ID="mainContent" runat="server">
-                            </asp:ContentPlaceHolder>
-                    </asp:Panel>
-                    <asp:Panel ID="divRight" runat="server" Visible="True" CssClass="rightside" SkinID="pnlPlain">
-                        <asp:ContentPlaceHolder ID="rightContent" runat="server">
-                        </asp:ContentPlaceHolder>
-                    </asp:Panel>
-                </main>
-                <footer class="footer">
-                    <div class="footer-policy">
-                        <div class="container">
-                            <div class="list-policy">
-                                <div class="item-policy">
-                                    <portal:modulewrapper id="mdl143" runat="server" configuremoduleid="143" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer-logo">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-2">
-                                    <div class="item-logo">
-                                        <portal:modulewrapper id="mdl144" runat="server" configuremoduleid="144" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer-address">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-10">
-                                    <div class="item-address">
-                                        <div class="list-address">
-                                            <ul>
-                                                <li>
-                                                    <p>Công Ty TNHH SX TM Bao Bì Phương Nam</p>
-                                                </li>
-                                                <li>
-                                                    <p>Mã số thuế: 0301515210</p>
-                                                </li>
-                                                <li>
-                                                    <div class="caption-web">
-                                                        <div class="text-web">Website:</div>
-                                                        <div class="link-web"><a href="#">http://phuongnampacking.com/</a></div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="item-address-2">
-                                        <div class="list-address-2">
-                                            <ul>
-                                                <li>
-                                                    <div class="caption-email">
-                                                        <div class="text-email">Email:</div>
-                                                        <div class="link-email"><a href="#">phuongnambaobi@gmail.com</a></div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <p>Điện thoại: (+84) 37961762 - 37961763 - 37963644 - 37962812</p>
-                                                </li>
-                                                <li>
-                                                    <p>Fax: (+84) 37967161 - 37963643</p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer-copyright">
-                        <div class="container">
-                            <div class="footer-block">
-                                <div class="item-office">
-                                    <div class="icon-office">
-                                        <a href="#"><img src="./img/item-footer.png" alt=""></a>
-                                    </div>
-                                    <div class="text-office">
-                                        <ul>
-                                            <li>
-                                                <div class="office">
-                                                    <div class="icon-office"><span class="ri-building-4-line"></span></div>
-                                                    <div class="caption">Văn Phòng Chính </div>
-                                                </div>
-                                                <div class="caption-office">
-                                                    <p>KCN Tân Phú Trung, Huyện cũ chi, TPHCM</p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="office">
-                                                    <div class="icon-office"><span class="ri-phone-line"></span></div>
-                                                </div>
-                                                <div class="caption-office">
-                                                    <p>0985.192.605</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="item-office">
-                                    <div class="icon-office">
-                                        <a href="#"><img src="./img/item-footer.png" alt=""></a>
-                                    </div>
-                                    <div class="text-office">
-                                        <ul>
-                                            <li>
-                                                <div class="office">
-                                                    <div class="icon-office"><span class="ri-building-4-line"></span></div>
-                                                    <div class="caption">Văn Phòng Chính </div>
-                                                </div>
-                                                <div class="caption-office">
-                                                    <p>KCN Tân Phú Trung, Huyện cũ chi, TPHCM</p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="office">
-                                                    <div class="icon-office"><span class="ri-phone-line"></span></div>
-                                                </div>
-                                                <div class="caption-office">
-                                                    <p>0985.192.605</p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <div class="link-copyright">
-                                <ul>
-                                    <li><a href="#"><span class="ri-facebook-fill"></span></a></li>
-                                    <li><a href="#"><span class="ri-linkedin-fill"></span></a></li>
-                                    <li><a href="#"><span class="ri-youtube-fill"></span></a></li>
-                                </ul>
-                            </div>
-                            <div class="copyright">
-                                <p>© 2020 Phuong Nam Packing. Thiết kế website bởi cánh cam.</p>
-                                <ul>
-                                    <li><a href="#">Điều khoản sử dụng</a></li>
-                                    <li><a href="#">Chính sách bảo mật</a></li>
-                                    <li><a href="#">Sơ đồ trang web</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-                <%--<ul>
-                <portal:welcomemessage id="WelcomeMessage" runat="server" renderaslistitem="true" listitemcss="firstnav" />
-                <portal:homelink id="HomeLink" runat="server" renderaslistitem="true" />
-                <portal:mobileskinlink id="mobileskin" runat="server" renderaslistitem="true" />
-                <portal:sitemaplink id="SiteMapLink2" runat="server" cssclass="sitelink" renderaslistitem="true" />
-                <portal:searchinput id="SearchInput2" linkonly="True" renderaslistitem="true" runat="server" />
-                <portal:memberlistlink id="MemberListLink" runat="server" renderaslistitem="true" />
-                <portal:mypagelink id="MyPageLink1" runat="server" renderaslistitem="true" />
-                <portal:userprofilelink id="UserProfileLink" runat="server" renderaslistitem="true" />
-                <portal:mailboxlink id="MailboxLink1" runat="server" renderaslistitem="true" />
-                <portal:registerlink id="RegisterLink" runat="server" renderaslistitem="true" />
-                <portal:loginlink id="LoginLink" runat="server" renderaslistitem="true" />
-                <portal:logoutlink id="LogoutLink" runat="server" renderaslistitem="true" />
-            </ul>--%>
-            </div>
-            <portal:AutoHidePanel ID="ah1" CssClass="cmsadminpanel" runat="server">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <nav>
-                            <ul class="nav navbar-nav listmenu">
-                                <portal:AdminMenuLink ID="lnkDashboard" IconCssClass="fa fa-key" RenderAsListItem="true" runat="server" />
-                                <portal:FileManagerLink ID="lnkFileManager" IconCssClass="fa fa-folder-open" RenderAsListItem="true" runat="server" />
-                                <portal:PageEditFeaturesLink ID="lnkPageContent" IconCssClass="fa fa-cog" RenderAsListItem="true" runat="server" />
-                                <portal:PageEditSettingsLink ID="lnkPageSettings" IconCssClass="fa fa-edit" RenderAsListItem="true" runat="server" />
-                                <portal:NewZoneLink ID="lnkNewZone" IconCssClass="fa fa-file" RenderAsListItem="true" runat="server" />
-                                <portal:ZoneEditSettingsLink ID="lnkZoneSettings" IconCssClass="fa fa-edit" RenderAsListItem="true" runat="server" />
-                                <li>
-                                    <div class="form-inline">
-                                        <div class="form-group">
-                                            <label class="sr-only">Mode</label>
-                                        </div>
-                                        <div class="form-group">
-                                            <asp:ContentPlaceHolder ID="pageEditContent" runat="server">
-                                            </asp:ContentPlaceHolder>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                            <ul class="nav">
-                                <li><a href="#" id="pullmenucms"><i class="fa fa-chevron-circle-right"></i></a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-                <script type="text/javascript">
-                    $(document).ready(function() {
-                        $("#pullmenucms").click(function(e) {
-                            e.preventDefault();
-                            if ($(this).parents('.cmsadminpanel').hasClass('toggled')) {
-                                ShowToolbar();
-                                Set_Cookie('toolbarOpenState', 'open');
-                            } else {
-                                HideToolbar();
-                                Set_Cookie('toolbarOpenState', 'closed');
-                            }
-                        });
-                        var openState = Get_Cookie('toolbarOpenState');
-                        if (openState != null) {
-                            if (openState == 'closed') {
-                                HideToolbar();
-                            }
-                            if (openState == 'open') {
-                                ShowToolbar();
-                            }
-                        }
-                    });
+	<body id="Body" runat="server" class="canhcam">
+		<portal:FacebookSdk ID="fbsdk" runat="server" />
+		<portal:LayoutDisplaySettings ID="LayoutDisplaySettings1" runat="server" />
+		<form id="frmMain" runat="server">
+			<asp:SiteMapDataSource ID="SiteMapData" runat="server" ShowStartingNode="false" />
+			<asp:SiteMapDataSource ID="PageMapDataSource" runat="server" ShowStartingNode="false" />
+			<asp:SiteMapDataSource ID="ChildPageSiteMapData" runat="server" ShowStartingNode="false" />
+			<asp:ScriptManager ID="ScriptManager1" EnablePageMethods="true" runat="server" />
+			<div id="wrapper">
+				<header>
+					<div class="container">
+						<div class="header">
+							<div class="header_logo">
+								<portal:modulewrapper id="mdl138" runat="server" configuremoduleid="138" />
+							</div>
+							<div class="header_main">
+								<div class="header_top">
+									<div class="search-icon"><span class="ri-search-2-line"></span></div>
+									<div class="language">
+										<div class="img-lange"><img src="./img/icon-vn.png" alt=""></div><a
+											class="current">VN<span class="ri-arrow-down-s-fill"></span></a>
+										<ul class="drop-down">
+											<li><a>EN</a></li>
+										</ul>
+									</div>
+									<div class="header_btn"><span class="ri-menu-line"></span></div>
+								</div>
+								<div class="header_menu">
+									<portal:modulewrapper id="mdl139" runat="server" configuremoduleid="139" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="block_search">
+						<div class="search-icon"><span class="ri-close-line"></span></div>
+						<div class="search_box">
+							<input type="text" placeholder="Tìm kiếm">
+							<button class="ri-search-line" type="submit"></button>
+						</div>
+					</div>
+					<div class="menu_mobile">
+						<div class="header_btn"><span class="ri-close-line"></span></div>
+						<div class="mobile-wrapper"></div>
+					</div>
+					<div class="overlay"></div>
+				</header>
+				<main class="main">
+					<asp:Panel ID="divAlt1" runat="server" CssClass="altcontent1">
+						<asp:ContentPlaceHolder ID="altContent1" runat="server">
+						</asp:ContentPlaceHolder>
+					</asp:Panel>
+					<asp:Panel ID="divLeft" runat="server" CssClass="leftside" Visible="True" SkinID="pnlPlain">
+						<asp:ContentPlaceHolder ID="leftContent" runat="server">
+						</asp:ContentPlaceHolder>
+					</asp:Panel>
+					<asp:Panel ID="divCenter" runat="server" Visible="True" CssClass="center-rightandleftmargins"
+						SkinID="pnlPlain">
+						<asp:ContentPlaceHolder ID="mainContent" runat="server">
+						</asp:ContentPlaceHolder>
+					</asp:Panel>
+					<asp:Panel ID="divRight" runat="server" Visible="True" CssClass="rightside" SkinID="pnlPlain">
+						<asp:ContentPlaceHolder ID="rightContent" runat="server">
+						</asp:ContentPlaceHolder>
+					</asp:Panel>
+				</main>
+				<footer class="footer">
+					<div class="footer-policy">
+						<div class="container">
+							<div class="list-policy">
+								<div class="item-policy">
+									<portal:modulewrapper id="mdl143" runat="server" configuremoduleid="143" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer-logo">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-2">
+									<div class="item-logo">
+										<portal:modulewrapper id="mdl144" runat="server" configuremoduleid="144" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer-address">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-10">
+									<div class="item-address">
+										<div class="list-address">
+											<ul>
+												<li>
+													<p>Công Ty TNHH SX TM Bao Bì Phương Nam</p>
+												</li>
+												<li>
+													<p>Mã số thuế: 0301515210</p>
+												</li>
+												<li>
+													<div class="caption-web">
+														<div class="text-web">Website:</div>
+														<div class="link-web"><a
+																href="#">http://phuongnampacking.com/</a></div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="item-address-2">
+										<div class="list-address-2">
+											<ul>
+												<li>
+													<div class="caption-email">
+														<div class="text-email">Email:</div>
+														<div class="link-email"><a href="#">phuongnambaobi@gmail.com</a>
+														</div>
+													</div>
+												</li>
+												<li>
+													<p>Điện thoại: (+84) 37961762 - 37961763 - 37963644 - 37962812</p>
+												</li>
+												<li>
+													<p>Fax: (+84) 37967161 - 37963643</p>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer-copyright">
+						<div class="container">
+							<div class="footer-block">
+								<div class="item-office">
+									<div class="icon-office">
+										<a href="#"><img src="./img/item-footer.png" alt=""></a>
+									</div>
+									<div class="text-office">
+										<ul>
+											<li>
+												<div class="office">
+													<div class="icon-office"><span class="ri-building-4-line"></span>
+													</div>
+													<div class="caption">Văn Phòng Chính </div>
+												</div>
+												<div class="caption-office">
+													<p>KCN Tân Phú Trung, Huyện cũ chi, TPHCM</p>
+												</div>
+											</li>
+											<li>
+												<div class="office">
+													<div class="icon-office"><span class="ri-phone-line"></span></div>
+												</div>
+												<div class="caption-office">
+													<p>0985.192.605</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="item-office">
+									<div class="icon-office">
+										<a href="#"><img src="./img/item-footer.png" alt=""></a>
+									</div>
+									<div class="text-office">
+										<ul>
+											<li>
+												<div class="office">
+													<div class="icon-office"><span class="ri-building-4-line"></span>
+													</div>
+													<div class="caption">Văn Phòng Chính </div>
+												</div>
+												<div class="caption-office">
+													<p>KCN Tân Phú Trung, Huyện cũ chi, TPHCM</p>
+												</div>
+											</li>
+											<li>
+												<div class="office">
+													<div class="icon-office"><span class="ri-phone-line"></span></div>
+												</div>
+												<div class="caption-office">
+													<p>0985.192.605</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="container">
+							<div class="link-copyright">
+								<ul>
+									<li><a href="#"><span class="ri-facebook-fill"></span></a></li>
+									<li><a href="#"><span class="ri-linkedin-fill"></span></a></li>
+									<li><a href="#"><span class="ri-youtube-fill"></span></a></li>
+								</ul>
+							</div>
+							<div class="copyright">
+								<p>© 2020 Phuong Nam Packing. Thiết kế website bởi cánh cam.</p>
+								<ul>
+									<li><a href="#">Điều khoản sử dụng</a></li>
+									<li><a href="#">Chính sách bảo mật</a></li>
+									<li><a href="#">Sơ đồ trang web</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+			<portal:AutoHidePanel ID="ah1" CssClass="cmsadminpanel" runat="server">
+				<div class="row">
+					<div class="col-lg-12">
+						<nav>
+							<ul class="nav navbar-nav listmenu">
+								<portal:AdminMenuLink ID="lnkDashboard" IconCssClass="fa fa-key" RenderAsListItem="true"
+									runat="server" />
+								<portal:FileManagerLink ID="lnkFileManager" IconCssClass="fa fa-folder-open"
+									RenderAsListItem="true" runat="server" />
+								<portal:PageEditFeaturesLink ID="lnkPageContent" IconCssClass="fa fa-cog"
+									RenderAsListItem="true" runat="server" />
+								<portal:PageEditSettingsLink ID="lnkPageSettings" IconCssClass="fa fa-edit"
+									RenderAsListItem="true" runat="server" />
+								<portal:NewZoneLink ID="lnkNewZone" IconCssClass="fa fa-file" RenderAsListItem="true"
+									runat="server" />
+								<portal:ZoneEditSettingsLink ID="lnkZoneSettings" IconCssClass="fa fa-edit"
+									RenderAsListItem="true" runat="server" />
+								<li>
+									<div class="form-inline">
+										<div class="form-group">
+											<label class="sr-only">Mode</label>
+										</div>
+										<div class="form-group">
+											<asp:ContentPlaceHolder ID="pageEditContent" runat="server">
+											</asp:ContentPlaceHolder>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<ul class="nav">
+								<li><a href="#" id="pullmenucms"><i class="fa fa-chevron-circle-right"></i></a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<script type="text/javascript">
+					$(document).ready(function () {
+						$("#pullmenucms").click(function (e) {
+							e.preventDefault();
+							if ($(this).parents('.cmsadminpanel').hasClass('toggled')) {
+								ShowToolbar();
+								Set_Cookie('toolbarOpenState', 'open');
+							} else {
+								HideToolbar();
+								Set_Cookie('toolbarOpenState', 'closed');
+							}
+						});
+						var openState = Get_Cookie('toolbarOpenState');
+						if (openState != null) {
+							if (openState == 'closed') {
+								HideToolbar();
+							}
+							if (openState == 'open') {
+								ShowToolbar();
+							}
+						}
+					});
 
-                    function HideToolbar() {
-                        $('.cmsadminpanel').addClass("toggled");
-                        $('.fa-chevron-circle-right').addClass('fa-rotate-180');
-                    }
+					function HideToolbar() {
+						$('.cmsadminpanel').addClass("toggled");
+						$('.fa-chevron-circle-right').addClass('fa-rotate-180');
+					}
 
-                    function ShowToolbar() {
-                        $('.cmsadminpanel').removeClass("toggled");
-                        $('.fa-chevron-circle-right').removeClass('fa-rotate-180');
-                    }
-                </script>
-            </portal:AutoHidePanel>
-            <portal:Woopra ID="woopra11" runat="server" />
-        </form>
-        <script src="/Data/Sites/1/skins/default/js/core.min.js"></script>
-        <script src="/Data/Sites/1/skins/default/js/main.min.js"></script>
-    </body>
+					function ShowToolbar() {
+						$('.cmsadminpanel').removeClass("toggled");
+						$('.fa-chevron-circle-right').removeClass('fa-rotate-180');
+					}
+				</script>
+			</portal:AutoHidePanel>
+			<portal:Woopra ID="woopra11" runat="server" />
+		</form>
+		<script src="/Data/Sites/1/skins/default/js/core.min.js"></script>
+		<script src="/Data/Sites/1/skins/default/js/main.min.js"></script>
+	</body>
 
 
-    </html>
+	</html>
