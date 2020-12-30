@@ -10,9 +10,9 @@
         <div class="row">
             <xsl:apply-templates select="Product"></xsl:apply-templates>
         </div>
-        <div class="btn-view">
+        <!-- <div class="btn-view">
             <a href="#">Xem thêm</a>
-        </div>
+        </div> -->
     </xsl:template>
     <xsl:template match="Product">
         <div class="col-12 col-md-6 col-lg-4">

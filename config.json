@@ -14,8 +14,7 @@
         "src/_plugins/mapping.js",
         "src/_plugins/data-bg.js",
         "bower_components/swiper/dist/js/swiper.js",
-        "src/_plugins/medium-zoom.js",
-        "bower_components/fancybox/dist/jquery.fancybox.min.js"
+        "src/_plugins/medium-zoom.js"
     ],
     "css": [
         "src/_plugins/font.css",

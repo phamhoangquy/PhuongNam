@@ -31,7 +31,7 @@
                         <div class="item-desc-pro-detail">
                             <div class="title">
                                 <xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
-								<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
+                                <xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
                             </div>
                             <div class="table-pro-detail">
                                 <xsl:value-of disable-output-escaping="yes" select="BriefContent"></xsl:value-of>
@@ -66,42 +66,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-8">
-                        <div class="wrap-form">
-                            <div class="row">
-                                <div class="form-group col-12 col-md-6 col-6">
-                                    <input class="form-control" type="text" placeholder="Họ và tên..."/>
-                                </div>
-                                <div class="form-group col-12 col-md-6 col-6">
-                                    <input class="form-control" type="text" placeholder="Công ty..."/>
-                                </div>
-                                <div class="form-group col-12 col-md-6 col-6">
-                                    <input class="form-control" type="text" placeholder="Số điện thoại..."/>
-                                </div>
-                                <div class="form-group col-12 col-md-6 col-6">
-                                    <input class="form-control" type="text" placeholder="Email..."/>
-                                </div>
-                                <div class="form-group col-12">
-                                    <textarea class="form-control" id="inpputTextArea" rows="3" placeholder="Nội dung..."></textarea>
-                                </div>
-                            </div>
-                            <div class="frm-btnwrap">
-                                <div class="frm-btn">
-                                    <a href="">GỬI
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        <span class="material-icons">trending_flat</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        <div id="form-inner"></div>
                     </div>
                 </div>
             </div>
