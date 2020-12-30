@@ -49,7 +49,7 @@ header
 						font-size: 1.8rem
 						color: #111111
 						cursor: pointer
-				.language
+				.language,.Module.Module-160
 					display: flex
 					align-items: center
 					position: relative
@@ -63,18 +63,22 @@ header
 						display: none
 						list-style: none
 						position: absolute
-						top: 25px
-						right: 5px
+						top: 30px
+						right: 15px
 						li
 							background-color: none
 							box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.1)
 							a
-								padding: 5px
+								color: #333333
 					.img-lange
 						padding-right: 5px
 						img
 							width: 1.4rem
 							height: 1.4rem
+					a.current
+						padding: 5px
+						color: #333333
+
 				.header_btn
 					width: 4rem
 					height: 4rem
@@ -124,7 +128,7 @@ header
 				span
 					color: #111111
 					font-weight: 500
-				&:after
+				&::after
 					position: absolute
 					bottom: -7px
 					left: 0
@@ -135,21 +139,32 @@ header
 					background: #faa61a
 					height: 1px
 					transition: all .2s
-				&:hover
+			&:hover
+				a
 					color: #faa61a
 					padding-bottom: .3rem
-					&:after
+					&::after
 						width: 100%
+						bottom: -7px
+				&:first-child
+					a
+						&::after
+							bottom: -4px
 			&.active
 				background: none
 				a
 					color: #f8a531
 					padding-bottom: .3rem
-					&:after
+					&::after
 						width: 100%
-						bottom: -4px
+						bottom: -7px
 					span
 						color: #faa61a
+				&:first-child
+					a
+						&::after
+							bottom: -4px
+			
 
 	.block_search
 		width: 100%
