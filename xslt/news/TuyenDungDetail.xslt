@@ -26,47 +26,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="contact-recruitment">
-                            <div class="title-hr-cc">
-                                <h3>Thông tin liên hệ</h3>
-                            </div>
-                            <div class="content-hr-cc">
-                                <ul>
-                                    <li>
-                                        <div class="icon-hr-cc">
-                                            <span class="ri-mail-fill"></span>
-                                        </div>
-                                        <div class="caption-hr-cc">
-                                            <p>phuongnambaobi@gmail.com</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icon-hr-cc">
-                                            <span class="ri-map-pin-2-fill"></span>
-                                        </div>
-                                        <div class="caption-hr-cc">
-                                            <p>KCN Tân Phú Trung, Huyện Củ Chi, TPHCM</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icon-hr-cc">
-                                            <span class="ri-global-line"></span>
-                                        </div>
-                                        <div class="caption-hr-cc">
-                                            <a href="#">www.phuongnambaobi.com - www.phuongnampacking.com</a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icon-hr-cc">
-                                            <span class="ri-phone-fill"></span>
-                                        </div>
-                                        <div class="caption-hr-cc">
-                                            <p>(+84) 37961762 - 37961763 - 37963644 - 37962812</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                        <div id="infor-inner"></div>
                         <div class="location-hr-detail">
                             <div class="card-title-left">
                                 <h3>Vị trí khác</h3>
@@ -124,7 +84,7 @@
             <div class="form-apply" id="form-apply" style="display: none">
                 <iframe>
                     <xsl:attribute name="src">
-                        <xsl:value-of select="/NewsDetail/ApplyUrl"></xsl:value-of>
+                        <xsl:value-of select="ApplyUrl"></xsl:value-of>
                     </xsl:attribute>
                 </iframe>
             </div>
