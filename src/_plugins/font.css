@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Material Design Icons";
-    src: url("../fonts/materialdesignicons-webfont.eot?v=3.5.94");
-    src: url("../fonts/materialdesignicons-webfont.eot?#iefix&v=3.5.94") format("embedded-opentype"), url("../fonts/materialdesignicons-webfont.woff2?v=3.5.94") format("woff2"), url("../fonts/materialdesignicons-webfont.woff?v=3.5.94") format("woff"), url("../fonts/materialdesignicons-webfont.ttf?v=3.5.94") format("truetype"), url("../fonts/materialdesignicons-webfont.svg?v=3.5.94#materialdesigniconsregular") format("svg");
+    src: url("../webfonts/materialdesignicons-webfont.eot?v=3.5.94");
+    src: url("../webfonts/materialdesignicons-webfont.eot?#iefix&v=3.5.94") format("embedded-opentype"), url("../webfonts/materialdesignicons-webfont.woff2?v=3.5.94") format("woff2"), url("../webfonts/materialdesignicons-webfont.woff?v=3.5.94") format("woff"), url("../webfonts/materialdesignicons-webfont.ttf?v=3.5.94") format("truetype"), url("../webfonts/materialdesignicons-webfont.svg?v=3.5.94#materialdesigniconsregular") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -22,8 +22,8 @@
     font-style: normal;
     font-weight: normal;
     font-display: auto;
-    src: url("../fonts/fa-brands-400.eot");
-    src: url("../fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-brands-400.woff2") format("woff2"), url("../fonts/fa-brands-400.woff") format("woff"), url("../fonts/fa-brands-400.ttf") format("truetype"), url("../fonts/fa-brands-400.svg#fontawesome") format("svg");
+    src: url("../webfonts/fa-brands-400.eot");
+    src: url("../webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.woff") format("woff"), url("../webfonts/fa-brands-400.ttf") format("truetype"), url("../webfonts/fa-brands-400.svg#fontawesome") format("svg");
 }
 
 .fab:before {
@@ -35,8 +35,8 @@
     font-style: normal;
     font-weight: 400;
     font-display: auto;
-    src: url("../fonts/fa-regular-400.eot");
-    src: url("../fonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-regular-400.woff2") format("woff2"), url("../fonts/fa-regular-400.woff") format("woff"), url("../fonts/fa-regular-400.ttf") format("truetype"), url("../fonts/fa-regular-400.svg#fontawesome") format("svg");
+    src: url("../webfonts/fa-regular-400.eot");
+    src: url("../webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.woff") format("woff"), url("../webfonts/fa-regular-400.ttf") format("truetype"), url("../webfonts/fa-regular-400.svg#fontawesome") format("svg");
 }
 
 .far:before {
@@ -49,8 +49,8 @@
     font-style: normal;
     font-weight: 900;
     font-display: auto;
-    src: url("../fonts/fa-solid-900.eot");
-    src: url("../fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-solid-900.woff2") format("woff2"), url("../fonts/fa-solid-900.woff") format("woff"), url("../fonts/fa-solid-900.ttf") format("truetype"), url("../fonts/fa-solid-900.svg#fontawesome") format("svg");
+    src: url("../webfonts/fa-solid-900.eot");
+    src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg");
 }
 
 .fa:before,
@@ -75,16 +75,16 @@
 
 @font-face {
     font-family: "Linearicons-Free";
-    src: url("../fonts/Linearicons-Free.eot?w118d");
-    src: url("../fonts/Linearicons-Free.eot?#iefixw118d") format("embedded-opentype"), url("../fonts/Linearicons-Free.woff2?w118d") format("woff2"), url("../fonts/Linearicons-Free.woff?w118d") format("woff"), url("../fonts/Linearicons-Free.ttf?w118d") format("truetype"), url("../fonts/Linearicons-Free.svg?w118d#Linearicons-Free") format("svg");
+    src: url("../webfonts/Linearicons-Free.eot?w118d");
+    src: url("../webfonts/Linearicons-Free.eot?#iefixw118d") format("embedded-opentype"), url("../webfonts/Linearicons-Free.woff2?w118d") format("woff2"), url("../webfonts/Linearicons-Free.woff?w118d") format("woff"), url("../webfonts/Linearicons-Free.ttf?w118d") format("truetype"), url("../webfonts/Linearicons-Free.svg?w118d#Linearicons-Free") format("svg");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "IcoMoon-Free";
-    src: url("../fonts/IcoMoon-Free.eot");
-    src: url("../fonts/IcoMoon-Free.eot?#iefix") format("embedded-opentype"), url("../fonts/IcoMoon-Free.woff2") format("woff2"), url("../fonts/IcoMoon-Free.woff") format("woff"), url("../fonts/IcoMoon-Free.ttf") format("truetype"), url("../fonts/IcoMoon-Free.svg#IcoMoon-Free") format("svg");
+    src: url("../webfonts/IcoMoon-Free.eot");
+    src: url("../webfonts/IcoMoon-Free.eot?#iefix") format("embedded-opentype"), url("../webfonts/IcoMoon-Free.woff2") format("woff2"), url("../webfonts/IcoMoon-Free.woff") format("woff"), url("../webfonts/IcoMoon-Free.ttf") format("truetype"), url("../webfonts/IcoMoon-Free.svg#IcoMoon-Free") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -99,4 +99,24 @@
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+<<<<<<< HEAD
 }
+=======
+}
+@font-face {
+	font-family: 'Lato, sans-serif';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('../webfont/lato-regular.ttf') format('ttf');
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url('../webfont/lato-bold.ttf') format('ttf');
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+>>>>>>> 7dd84f011f66a0178c8d6f6d02bad44d2439d52f

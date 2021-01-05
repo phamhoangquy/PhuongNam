@@ -1,187 +1,173 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
-<xsl:output method="html" indent="yes"/>
-    <xsl:template match="/">
-        <section class="zensa-san-pham-ct-1 zensa-section">
+<xsl:stylesheet version="1.0"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
+    <xsl:output method="html" indent="yes"/>
+    <xsl:template match="/ProductDetail">
+        <section class="product-detail">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
-                        <div class="main-slide">
-                            <div class="row">
-                                <div class="col-2">
-                                    <div class="main-thumbs">
-                                        <div class="swiper-container gallery-thumbs">
-                                            <div class="swiper-wrapper">
-                                                <xsl:apply-templates select="/ProductDetail/ProductImages"></xsl:apply-templates>
-                                            </div>
-                                        </div>
-                                        <div class="main-button">
-                                            <div class="button-prev"><em class="lnr lnr-chevron-up"></em></div>
-                                            <div class="button-next"><em class="lnr lnr-chevron-down"></em></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-10">
-                                    <div class="swiper-container gallery-top">
-                                        <div class="swiper-wrapper">
-                                            <xsl:apply-templates select="/ProductDetail/ProductImages"></xsl:apply-templates>
-                                        </div>
-                                    </div>
+                    <div class="col-lg-7">
+                        <div class="gallery-product-detail-slide">
+                            <div class="swiper-container gallery-top">
+                                <div class="swiper-wrapper">
+                                    <xsl:apply-templates select="ProductImages" mode="Top"></xsl:apply-templates>
                                 </div>
                             </div>
-                            
+                            <div class="swiper-container gallery-thumbs">
+                                <div class="swiper-wrapper">
+                                    <xsl:apply-templates select="ProductImages" mode="Thumb"></xsl:apply-templates>
+                                </div>
+                                <div class="nav-arrow-prev">
+                                    <em class="lnr lnr-chevron-left"></em>
+                                </div>
+                                <div class="nav-arrow-next">
+                                    <em class="lnr lnr-chevron-right"></em>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="zensa-title-h3"> 
-                            <h3><xsl:value-of select="/ProductDetail/Title" disable-output-escaping="yes"></xsl:value-of></h3><xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
-                        </div>
-                        <div class="main-table">
-                            <xsl:value-of select="/ProductDetail/FullContent" disable-output-escaping="yes"></xsl:value-of>
-                        </div>
-                        <div class="main-price-contact">
-                            <div class="buy-now"><a href="tel: 1900 8054"> <em class="mdi mdi-cart"></em><xsl:value-of select="/ProductDetail/BuyNowText" disable-output-escaping="yes"></xsl:value-of></a></div>
-                            <div class="contact">
-                                <div id="shareProduct"></div>
+                    <div class="col-lg-5">
+                        <div class="item-desc-pro-detail">
+                            <div class="title">
+                                <xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
+                                <xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
+                            </div>
+                            <div class="table-pro-detail">
+                                <xsl:value-of disable-output-escaping="yes" select="BriefContent"></xsl:value-of>
+                            </div>
+                            <div class="contact-pro-detail">
+                                <span class="ri-phone-line"></span>
+                                <a>
+                                    <xsl:attribute name="href">
+                                        <xsl:value-of select="Url"></xsl:value-of>
+                                    </xsl:attribute>
+                                    <xsl:attribute name="title">
+                                        <xsl:value-of select="Title"></xsl:value-of>
+                                    </xsl:attribute>
+                                    <xsl:text disable-output-escaping="yes">Liên hệ</xsl:text>
+                                </a>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="fullcontent-pro-detail">
+                    <div class="title">Ứng dụng</div>
+                    <div class="caption-pro-detail">
+                        <xsl:value-of disable-output-escaping="yes" select="FullContent"></xsl:value-of>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="zensa-san-pham-ct-2 zensa-section">
+        <section class="product-detail-2">
             <div class="container">
-                <div class="main-nav">
-                    <xsl:apply-templates select="/ProductDetail/ProductAttributes" mode="ProductAttributes1"></xsl:apply-templates>
+                <div class="head-title">
+                    <img src="/Data/Sites/1/skins/default/img/title/information.png" alt=""/>
                 </div>
-                <div class="main-content">
-                    <xsl:apply-templates select="/ProductDetail/ProductAttributes" mode="ProductAttributes2"></xsl:apply-templates>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div id="form-inner"></div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="zensa-san-pham-ct-3 zensa-section">
+        <section class="product-detail-3">
             <div class="container">
-                <div class="background" setBackground="/Data/Sites/1/media/sanpham/bg-4.png">
-                    <div class="zensa-title text-center">
-                        <h2><xsl:value-of select="/ProductDetail/ProductsOfTheSameTypeText" disable-output-escaping="yes"></xsl:value-of></h2>
+                <div class="head-title">
+                    <img src="/Data/Sites/1/skins/default/img/title/title-other-pro.png" alt=""/>
+                </div>
+                <div class="detail-slide-3-swiper-wrapper">
+                    <div class="nav-arrow-prev">
+                        <em class="lnr lnr-chevron-left"></em>
                     </div>
-                    <div class="main-item">
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <xsl:apply-templates select="/ProductDetail/ProductOther"></xsl:apply-templates>
-                                
-                            </div>
-                        </div>
-                        <div class="main-button">
-                            <div class="button-prev"><em class="lnr lnr-chevron-left"></em></div>
-                            <div class="button-next"><em class="lnr lnr-chevron-right"></em></div>
+                    <div class="nav-arrow-next">
+                        <em class="lnr lnr-chevron-right"></em>
+                    </div>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <xsl:apply-templates select="ProductOther"></xsl:apply-templates>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </xsl:template>
-    <xsl:template match="ProductImages">
+    <xsl:template match="ProductImages" mode="Top">
         <div class="swiper-slide">
-            <div class="image">
-                <img class="lazyload">
-                    <xsl:attribute name="data-src">
-                        <xsl:value-of select="ImageUrl"></xsl:value-of>
-                    </xsl:attribute>
-                    <xsl:attribute name="alt">
-                        <xsl:value-of select="Title"></xsl:value-of>
-                    </xsl:attribute>
-                </img>
-            </div>
+            <img >
+                <xsl:attribute name="src">
+                    <xsl:value-of select="ImageUrl"></xsl:value-of>
+                </xsl:attribute>
+                <xsl:attribute name="alt">
+                    <xsl:value-of select="Title"></xsl:value-of>
+                </xsl:attribute>
+            </img>
         </div>
     </xsl:template>
-    <xsl:template match="ProductAttributes" mode="ProductAttributes1">
-        <div class="item">
-            <xsl:if test="position()=1">
-                <xsl:attribute name="class">
-                    <xsl:text disable-output-escaping="yes">item active</xsl:text>
+    <xsl:template match="ProductImages" mode="Thumb">
+        <div class="swiper-slide">
+            <img >
+                <xsl:attribute name="src">
+                    <xsl:value-of select="ImageUrl"></xsl:value-of>
                 </xsl:attribute>
-                <xsl:attribute name="data-tab">
-                    <xsl:value-of select="position()" disable-output-escaping="yes"></xsl:value-of>
+                <xsl:attribute name="alt">
+                    <xsl:value-of select="Title"></xsl:value-of>
                 </xsl:attribute>
-            </xsl:if>
-            <xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
-        </div>
-    </xsl:template>
-    <xsl:template match="ProductAttributes" mode="ProductAttributes2">
-        <div class="content-item">
-            <xsl:if test="position()=1">
-                <xsl:attribute name="class">
-                    <xsl:text disable-output-escaping="yes">content-item active</xsl:text>
-                </xsl:attribute>
-                <xsl:attribute name="data-content">
-                    <xsl:value-of select="position()" disable-output-escaping="yes"></xsl:value-of>
-                </xsl:attribute>
-            </xsl:if>
-            <div class="full-content">
-                <xsl:value-of select="Content" disable-output-escaping="yes"></xsl:value-of>
-            </div>
+            </img>
         </div>
     </xsl:template>
     <xsl:template match="ProductOther">
         <div class="swiper-slide">
-            <figure>
-                <a>
-                    <xsl:attribute name="href">
-                        <xsl:value-of select="Url"></xsl:value-of>
-                    </xsl:attribute>
-                    <xsl:attribute name="title">
-                        <xsl:value-of select="Title"></xsl:value-of>
-                    </xsl:attribute>
-                    <xsl:attribute name="target">
-                        <xsl:value-of select="Target"></xsl:value-of>
-                    </xsl:attribute>
-                    <div class="image">
-                        <img class="lazyload">
-                            <xsl:attribute name="data-src">
+            <div class="item-product-detail">
+                <div class="item__img">
+                    <a>
+                        <xsl:attribute name="href">
+                            <xsl:value-of select="Url"></xsl:value-of>
+                        </xsl:attribute>
+                        <xsl:attribute name="title">
+                            <xsl:value-of select="Title"></xsl:value-of>
+                        </xsl:attribute>
+                        <img >
+                            <xsl:attribute name="src">
                                 <xsl:value-of select="ImageUrl"></xsl:value-of>
                             </xsl:attribute>
                             <xsl:attribute name="alt">
                                 <xsl:value-of select="Title"></xsl:value-of>
                             </xsl:attribute>
                         </img>
-                    </div></a>
-                <figcaption>
-                    <div class="title">
-                        <a>
-                            <xsl:attribute name="href">
-                                <xsl:value-of select="Url"></xsl:value-of>
-                            </xsl:attribute>
-                            <xsl:attribute name="title">
-                                <xsl:value-of select="Title"></xsl:value-of>
-                            </xsl:attribute>
-                            <xsl:attribute name="target">
-                                <xsl:value-of select="Target"></xsl:value-of>
-                            </xsl:attribute>
-                            <h3><xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of></h3>
-                        </a>
-                        <xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
+                    </a>
+                    <div class="title-zone">
+                        <div class="caption">
+                            <xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
+                        </div>
                     </div>
-                    <div class="sub-title">
-                        <xsl:value-of select="BriefContent" disable-output-escaping="yes"></xsl:value-of>
+                </div>
+                <div class="item__img-hover">
+                    <div class="content">
+                        <div class="img-hover">
+                            <a>
+                                <xsl:attribute name="href">
+                                    <xsl:value-of select="Url"></xsl:value-of>
+                                </xsl:attribute>
+                                <xsl:attribute name="title">
+                                    <xsl:value-of select="Title"></xsl:value-of>
+                                </xsl:attribute>
+                                <img >
+                                    <xsl:attribute name="src">
+                                        <xsl:value-of select="ThumbnailUrl"></xsl:value-of>
+                                    </xsl:attribute>
+                                    <xsl:attribute name="alt">
+                                        <xsl:value-of select="Title"></xsl:value-of>
+                                    </xsl:attribute>
+                                </img>
+                            </a>
+                            <div class="desc">
+                                <xsl:value-of disable-output-escaping="yes" select="Title"></xsl:value-of>
+                            </div>
+                        </div>
                     </div>
-                    <div class="view-more"> 
-                        <a>
-                            <xsl:attribute name="href">
-                                <xsl:text disable-output-escaping="yes">tel: 1900 8054</xsl:text>
-                            </xsl:attribute>
-                            <xsl:attribute name="title">
-                                <xsl:value-of select="Title"></xsl:value-of>
-                            </xsl:attribute>
-                            <xsl:attribute name="target">
-                                <xsl:value-of select="Target"></xsl:value-of>
-                            </xsl:attribute>
-                            <em class="mdi mdi-cart"></em>
-                            <xsl:value-of select="/ProductDetail/BuyNowText" disable-output-escaping="yes"></xsl:value-of>
-                        </a>
-                    </div>
-                </figcaption>
-            </figure>
+                </div>
+            </div>
         </div>
     </xsl:template>
 </xsl:stylesheet>
