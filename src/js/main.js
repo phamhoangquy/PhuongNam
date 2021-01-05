@@ -8,8 +8,10 @@ $(document).ready(function() {
     toggleApplyForm();
     InsertBd();
     InsertBdTitle();
+    formInner();
     coutingNumber();
     Showmap();
+    linkAbout();
     appendRecruit();
     showBackToTop();
 });
@@ -49,6 +51,10 @@ function appendRecruit() {
     $('#infor-box').appendTo('.recruitment-detail #infor-inner')
 }
 
+function formInner() {
+    $('#ctl00_altContent1_ctl03_pnlForm').appendTo('.product-detail-2 #form-inner')
+}
+
 function toggleMobileMenu() {
     $('.header_btn').click(function() {
         $(this).toggleClass("click");
@@ -63,6 +69,26 @@ function toggleMobileMenu() {
     $('.search-icon').click(function() {
         $(this).toggleClass("click");
         $('.block_search').toggleClass("show");
+    });
+}
+
+function linkAbout() {
+    $(".link-to-about-section a").on("click", function(event) {
+        if (this.hash !== "") {
+            let offset = $("header").outerHeight() + 50;
+            var hash = this.hash;
+            $(".link-to-about-section a").removeClass('active')
+            $(this).addClass('active')
+
+            $("html, body").animate({
+                    scrollTop: $(hash).offset().top - offset,
+                },
+                800,
+                function() {
+                    window.location.hash = hash;
+                }
+            );
+        } // End if
     });
 }
 

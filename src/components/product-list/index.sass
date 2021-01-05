@@ -29,10 +29,9 @@
 					&:hover
 						a
 							color: #faa61a
-
 	.item-product-color, .item-product-branch
-		border: 1px solid #e0e0e0
 		margin-bottom: 3rem
+		border: 1px solid #e0e0e0
 		.title-product
 			font-size: 1.6rem
 			color: #ffffff
@@ -40,6 +39,36 @@
 			padding: 2rem 3rem
 			text-transform: uppercase
 			font-weight: 600
+		.color-product
+			padding: 0 15px
+			background-color: #ffffff
+			ul
+				list-style: none
+				a
+					display: flex
+					justify-content: flex-start
+					align-items: flex-start
+					padding: 8px 0
+					color: #333333
+					text-decoration: none
+					position: relative
+					&::before
+						content: ''
+						font-family: "remixicon"
+						font-size: 16px
+						display: block
+						font-weight: 200
+						width: 16px
+						height: 16px
+						padding-right: 25px
+						font-weight: 200
+						color: #333333
+					&.active
+						&::before
+							content: '\eb82'
+							color: #faa61a
+					&::before
+						content: '\eb7f'
 		.color-product,.branch-product
 			ul
 				list-style: none
@@ -228,3 +257,8 @@
 				align-items: center
 				padding-left: 2rem
 
+#ctl00_altContent1_ctl03_pnlForm
+	display: none
+.product-detail-page
+	#ctl00_altContent1_ctl03_pnlForm
+		display: block !important
