@@ -101,6 +101,14 @@
 			.title-about-3
 				text-align: center
 
+	.title-about-3
+		text-align: center
+		img
+			height: 160px
+			width: 100%
+			object-fit: contain
+			@media screen and ( max-width:576px )
+				height: auto
 	.card_img
 		display: flex
 		justify-content: center
@@ -475,3 +483,17 @@
 						transform: scale(1.13)
 						filter: grayscale(0%)
 						opacity: 1
+
+.menu-list
+	position: sticky
+	z-index: 99
+	top: 110px
+	width: 100%
+	@media screen and ( max-width: 1280px )
+		top: 100px
+	@media screen and ( max-width: 1024px )
+		top: 85px
+	@media screen and ( max-width: 768px )
+		top: 85px
+	@media screen and ( max-width: 576px )
+		top: 85px
