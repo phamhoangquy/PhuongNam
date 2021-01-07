@@ -14,7 +14,7 @@
     </xsl:template>
     <xsl:template match="Zone" mode="Block1">
         <xsl:if test="position() = 1">
-            <section class="about-1">
+            <section class="about-1" id='section-about-1'>
                 <div class="container">
                     <div class="row">
                         <xsl:apply-templates select="News" mode="ThongDiep"></xsl:apply-templates>
@@ -29,7 +29,7 @@
             </section>
         </xsl:if>
         <xsl:if test="position() = 2">
-            <section class="about-2">
+            <section class="about-2" id='section-about-2'>
                 <div class="container">
                     <xsl:apply-templates select="News" mode="TamNhin"></xsl:apply-templates>
                 </div>
@@ -38,7 +38,7 @@
     </xsl:template>
     <xsl:template match="Zone" mode="Block2">
         <xsl:if test="position() = 3">
-            <section class="about-4">
+            <section class="about-4" id='section-about-3'>
                 <div class="container">
                     <div class="title-about">
                         <img >
@@ -67,7 +67,7 @@
             </section>
         </xsl:if>
         <xsl:if test="position() = 4">
-            <section class="about-5">
+            <section class="about-5" id='section-about-4'>
                 <div class="container">
                     <div class="title-about-5">
                         <img >
@@ -101,7 +101,7 @@
     </xsl:template>
     <xsl:template match="Zone" mode="Block3">
         <xsl:if test="position() = 5">
-            <section class="about-6">
+            <section class="about-6" id='section-about-5'>
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-6 col-lg-6">
@@ -136,7 +136,7 @@
             </section>
         </xsl:if>
         <xsl:if test="position() = 6">
-            <section class="about-7">
+            <section class="about-7" id='section-about-6'>
                 <div class="container">
                     <div class="title-about">
                         <img >

@@ -6,7 +6,7 @@
 		@media screen and ( max-width: 1024.98px )
 			margin-top: 3rem
 		@media screen and ( max-width: 576px )
-			margin-top: 0
+			margin-top: 3rem
 	.nav-arrow-prev,.nav-arrow-next
 		position: absolute
 		width: 40px
@@ -35,7 +35,8 @@
 			right: 15px
 		@media screen and ( max-width: 576px)
 			right: 0
-			
+		@media screen and ( max-width: 375px)
+			right: 25px
 	.nav-arrow-prev
 		left: -60px
 		@media screen and ( max-width: 1350px)
@@ -44,6 +45,9 @@
 			left: 15px
 		@media screen and ( max-width: 576px)
 			left: 0
+		@media screen and ( max-width: 375px)
+			left: 25px
+
 	.swiper-container
 		margin: 0
 		@media screen and ( max-width: 1350px)
@@ -65,6 +69,11 @@
 			background: #ffffff
 			overflow: hidden
 			transition: .3s all ease-in-out
+			@media screen and ( max-width: 576px )
+				width: 120px
+				height: 120px
+				img
+					height: 65px !important
 			img
 				max-width: 100%
 				height: auto
