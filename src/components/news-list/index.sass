@@ -131,10 +131,21 @@
 					font-size: 16px
 					color: #666666
 
-.news-list
-	.head-menu
-		ul
-			li
-				@media screen and ( max-width: 576px )
-					justify-content: center
-
+.news-list-page
+	.menu-list
+		position: sticky
+		z-index: 99
+		top: 110px
+		width: 100%
+		@media screen and ( max-width: 1280px )
+			top: 100px
+		@media screen and ( max-width: 1024px )
+			top: 98px
+		@media screen and ( max-width: 768px )
+			top: 85px
+		@media screen and ( max-width: 576px )
+			top: 85px
+		.head-menu
+			@media screen and ( max-width: 1024.98px )
+				justify-content: center
+		
