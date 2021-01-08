@@ -14,16 +14,26 @@
                                     <a href='javascript:void(0)' >Ứng tuyển ngay</a>
                                 </div>
                                 <div class="btn button-download">
-                                    <a>
+                                    <a class=" ">
                                         <xsl:attribute name="href">
                                             <xsl:value-of select="FileUrl"></xsl:value-of>
                                         </xsl:attribute>
                                         <xsl:attribute name="title">
                                             <xsl:value-of select="Title"></xsl:value-of>
                                         </xsl:attribute>
-                                        <xsl:text disable-output-escaping="yes">Tải form ứng tuyển</xsl:text>
+                                        <xsl:attribute name="target">
+                                            <xsl:value-of select="Target"></xsl:value-of>
+                                        </xsl:attribute>
+                                        <xsl:text disable-output-escaping="yes">Tải form ứng tuyển</xsl:text> 
                                     </a>
                                 </div>
+                            </div>
+                            <div class="form-apply" id="form-apply" style="display: none">
+                                <iframe>
+                                    <xsl:attribute name="src">
+                                        <xsl:value-of select="/NewsDetail/ApplyUrl"></xsl:value-of>
+                                    </xsl:attribute>
+                                </iframe>
                             </div>
                         </div>
                         <div id="infor-inner"></div>
@@ -80,13 +90,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="form-apply" id="form-apply" style="display: none">
-                <iframe>
-                    <xsl:attribute name="src">
-                        <xsl:value-of select="ApplyUrl"></xsl:value-of>
-                    </xsl:attribute>
-                </iframe>
             </div>
         </section>
     </xsl:template>
