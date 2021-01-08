@@ -11,7 +11,7 @@
                         <div class="form_apply_hr_detail">
                             <div class="apply-form">
                                 <div class="btn button-apply">
-                                    <a href='javascript:void(0)' >Ứng tuyển ngay</a>
+                                    <a href='javascript:void(0)' data-fancybox="" data-src="#form-apply">Ứng tuyển ngay</a>
                                 </div>
                                 <div class="btn button-download">
                                     <a class=" ">

@@ -4,7 +4,7 @@ $(document).ready(function() {
     mappingMenu();
     projectDetailSlide();
     about4();
-    fancyboxModal();
+    // fancyboxModal();
     toggleApplyForm();
     InsertBd();
     InsertBdTitle();
@@ -489,21 +489,21 @@ function coutingNumber() {
     });
 }
 
-function fancyboxModal() {
-    $(".button-apply a").click(function(e) {
-        e.preventDefault();
-        $.fancybox.open({
-            src: '#form-apply',
-            type: 'inline',
-            opts: {
-                afterShow: function(instance, current) {
-                    $(".fancybox-is-open").appendTo("main");
-                }
-            }
-        });
-        return false;
-    });
-}
+// function fancyboxModal() {
+//     $(".button-apply a").click(function(e) {
+//         e.preventDefault();
+//         $.fancybox.open({
+//             src: '#form-apply',
+//             type: 'inline',
+//             opts: {
+//                 afterShow: function(instance, current) {
+//                     $(".fancybox-is-open").appendTo("main");
+//                 }
+//             }
+//         });
+//         return false;
+//     });
+// }
 
 function toggleApplyForm() {
     $(".apply-form .button-apply a").on("click", function() {
