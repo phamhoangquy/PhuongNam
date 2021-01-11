@@ -44,31 +44,32 @@
 			background-color: #ffffff
 			ul
 				list-style: none
-				a
-					display: flex
-					justify-content: flex-start
-					align-items: flex-start
-					padding: 8px 0
-					color: #333333
-					text-decoration: none
-					position: relative
-					&::before
-						content: ''
-						font-family: "remixicon"
-						font-size: 16px
-						display: block
-						font-weight: 200
-						width: 16px
-						height: 16px
-						padding-right: 25px
-						font-weight: 200
+				li
+					a
+						display: flex
+						justify-content: flex-start
+						align-items: flex-start
+						padding: 8px 0
 						color: #333333
-					&.active
+						text-decoration: none
+						position: relative
 						&::before
-							content: '\eb82'
-							color: #faa61a
-					&::before
-						content: '\eb7f'
+							content: ''
+							font-family: "remixicon"
+							font-size: 16px
+							display: block
+							font-weight: 200
+							width: 16px
+							height: 16px
+							padding-right: 25px
+							font-weight: 200
+							color: #333333
+						&.active
+							&::before
+								content: '\eb82'
+								color: #faa61a
+						&::before
+							content: '\eb7f'
 		.color-product,.branch-product
 			ul
 				list-style: none
