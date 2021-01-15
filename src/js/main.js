@@ -12,6 +12,7 @@ $(document).ready(function() {
     coutingNumber();
     Showmap();
     linkAbout();
+    scrollToDiv();
     appendRecruit();
     showBackToTop();
 });
@@ -77,9 +78,7 @@ function linkAbout() {
         if (this.hash !== "") {
             let offset = $("header").outerHeight() + 50;
             var hash = this.hash;
-            $(".link-to-about-section a").removeClass('active')
-            $(this).addClass('active')
-
+            $(this).parent().addClass('active').siblings().removeClass("active")
             $("html, body").animate({
                     scrollTop: $(hash).offset().top - offset,
                 },
@@ -91,6 +90,19 @@ function linkAbout() {
         } // End if
     });
 }
+
+const scrollToDiv = () => {
+    $(".banner-scroll").click(function() {
+        let sumHed =
+            $(".home-banner").outerHeight() - $("header").outerHeight();
+        console.log(sumHed);
+        $("html,body").animate({
+                scrollTop: sumHed,
+            },
+            "fast"
+        );
+    });
+};
 
 function mappingMenu() {
     return new MappingListener({

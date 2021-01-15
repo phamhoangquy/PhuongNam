@@ -48,7 +48,7 @@
                             </div>
                             <div class="header_main">
                                 <div class="header_top">
-                                    <div class="search-icon"><span class="ri-search-2-line"></span></div>
+                                    <div class="search-icon"><span class="material-icons">search</span></div>
                                     <div class="language">
                                         <portal:modulewrapper id="mdl160" runat="server" configuremoduleid="160" />
                                     </div>
@@ -169,6 +169,9 @@
                 </footer>
                 <div class="block__tool dekstop">
                     <portal:modulewrapper id="mdl200" runat="server" configuremoduleid="200" />
+                </div>
+                <div id="back-to-top">
+                    <img src="/Data/Sites/1/media/img/top.png" alt="" srcset="">
                 </div>
             </div>
             <portal:AutoHidePanel ID="ah1" CssClass="cmsadminpanel" runat="server">

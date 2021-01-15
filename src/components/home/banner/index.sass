@@ -99,6 +99,30 @@
 		span
 			font-weight: 700
 			display: inline-block
+	.banner-scroll
+		position: absolute
+		top: 65%
+		left: 50%
+		background: #faa61a
+		z-index: 99
+		border-radius: 50%
+		width: 36px
+		height: 36px
+		cursor: pointer
+		.icon-banner
+			display: flex
+			justify-content: center
+			align-items: center
+			transform: scale(1)
+			transition: .3s all ease-in-out
+			padding-top: 10px
+			span
+				color: #ffffff
+				font-size: 1.6rem
+			&:hover
+				transform: scale(1.13)
+				span
+					transform: scale(1.13)
 	.img-clouds
 		position: absolute
 		bottom: -190px

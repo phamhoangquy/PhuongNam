@@ -11,6 +11,9 @@
                         <xsl:apply-templates select="Banner"></xsl:apply-templates>
                     </div>
                 </div>
+                <div class="banner-scroll">
+                    <div class="icon-banner"><span class="lnr lnr-chevron-down"></span></div>
+                </div>
                 <div class="img-clouds">
                     <img src="/Data/Sites/1/skins/default/img/may.png" alt=""/>
                 </div>
