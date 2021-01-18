@@ -29,7 +29,7 @@
 		"cssnano": "4.1.8",
 		"del": "3.0.0",
 		"graceful-fs": "4.1.15",
-		"gulp": "4.0.0",
+		"gulp": "^4.0.0",
 		"gulp-babel": "8.0.0",
 		"gulp-concat": "2.6.1",
 		"gulp-plumber": "1.2.1",
@@ -40,6 +40,7 @@
 		"gulp-sourcemaps": "2.6.4",
 		"gulp-terser": "1.1.7",
 		"gulp-uglify": "3.0.2",
-		"remixicon": "^2.5.0"
+		"remixicon": "^2.5.0",
+		"sass": "^1.32.4"
 	}
 }
