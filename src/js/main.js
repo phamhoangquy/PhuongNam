@@ -450,6 +450,7 @@ function about4() {
         centeredSlides: true,
         roundLengths: true,
         loop: true,
+        slideToClickedSlide: true,
         loopAdditionalSlides: 30,
         breakpoints: {
             320: {
