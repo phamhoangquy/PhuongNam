@@ -4,6 +4,12 @@
     xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
     <xsl:output method="html" indent="yes"/>
     <xsl:template match="/ZoneList">
+        <div class="tool-product">
+            <div class="wrapper"><div class="btn btn-cate">Loại thùng</div>
+            <div class="btn btn-filter"> Màu sắc / Ngành hàng
+            </div></div>
+            
+        </div>
         <div class="item-product-left">
             <div class="title-product">Loại thùng</div>
             <div class="choose-product">
@@ -11,6 +17,7 @@
                     <xsl:apply-templates select="Zone"></xsl:apply-templates>
                 </ul>
             </div>
+            <div id="cls_filter">Đóng</div>
         </div>
     </xsl:template>
     <xsl:template match="Zone">

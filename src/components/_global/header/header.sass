@@ -277,6 +277,27 @@ header
 			.nav-menu
 				li
 					border-bottom: 0
+					padding-bottom: 10px
+					&.active
+						a
+							position: relative
+							&::after
+								bottom: -7px
+						&:first-child
+							a
+								position: relative
+								&::after
+									bottom: -4px
+					&:hover
+						a
+							position: relative
+							&::after
+								bottom: -7px
+						&:first-child
+							a
+								position: relative
+								&::after
+									bottom: -4px
 				@media screen and ( max-width: 1280px )
 					justify-content: left
 	.menu_mobile.show
