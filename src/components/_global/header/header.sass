@@ -112,9 +112,11 @@ header
 		@media screen and ( max-width: 1280px )
 			display: block
 		li
-			padding-bottom: .2rem
+			padding-bottom: 1.5rem
 			padding-right: 4rem
 			border-bottom: 1px solid #e8e8e8
+			@media screen and ( max-width: 1366px)
+				padding-bottom: 1.3rem
 			&:last-child
 				padding-right: 0
 			@media screen and ( max-width: 1280px )
@@ -146,11 +148,15 @@ header
 					padding-bottom: .3rem
 					&::after
 						width: 100%
-						bottom: -7px
+						bottom: -20px
+						@media screen and ( max-width: 1441px)
+							bottom: -18px
 				&:first-child
 					a
 						&::after
-							bottom: -4px
+							bottom: -17px
+							@media screen and ( max-width: 1441px)
+								bottom: -16px
 			&.active
 				background: none
 				a
@@ -158,13 +164,17 @@ header
 					padding-bottom: .3rem
 					&::after
 						width: 100%
-						bottom: -7px
+						bottom: -20px
+						@media screen and ( max-width: 1441px)
+							bottom: -18px
 					span
 						color: #faa61a
 				&:first-child
 					a
 						&::after
-							bottom: -4px
+							bottom: -17px
+							@media screen and ( max-width: 1441px)
+								bottom: -16px
 			
 
 	.block_search

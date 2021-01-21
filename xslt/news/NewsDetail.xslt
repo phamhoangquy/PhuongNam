@@ -8,10 +8,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-3 col-lg-3">
+                        <div class="srcoll-detail">
                         <div class="title-detail">
                             <h2>Tin tức khác</h2>
                         </div>
-                        <xsl:apply-templates select="NewsOther"></xsl:apply-templates>
+                        <div class="other-detail">
+                            <xsl:apply-templates select="NewsOther"></xsl:apply-templates>
+                        </div>
+                        </div>
                     </div>
                     <div class="col-12 col-md-9 col-lg-9">
                         <div class="title-detail-right">
