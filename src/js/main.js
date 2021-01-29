@@ -4,7 +4,6 @@ $(document).ready(function() {
     mappingMenu();
     projectDetailSlide();
     about4();
-    // fancyboxModal();
     toggleApplyForm();
     InsertBd();
     InsertBdTitle();
@@ -18,13 +17,24 @@ $(document).ready(function() {
     showBackToTop();
 });
 
-window.onscroll = function() {
-    header.headerScroll()
-};
+function height(el) {
+    var height = 0;
+    $(el).each(function() {
+        var thisHeight = $(this).height();
+        if (thisHeight > height) {
+            height = thisHeight;
+        }
+        setTimeout(() => {
+            $(el).height(height)
+        }, 100)
+    })
+}
+
+
 let header = {
     headerScroll: () => {
-        let heightHeader = $('header').height();
-        $(window).scrollTop() > heightHeader ? $('header').addClass('header-scroll') : $('header').removeClass('header-scroll');
+        let heightHeader = $('header').outerHeight();
+        $(window).scrollTop() > 0 ? $('header').addClass('header-scroll') : $('header').removeClass('header-scroll');
     }
 }
 
@@ -571,3 +581,7 @@ function showBackToTop() {
         })
     })
 }
+
+window.onscroll = function() {
+    header.headerScroll()
+};
