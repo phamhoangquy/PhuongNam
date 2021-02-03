@@ -14,8 +14,24 @@ $(document).ready(function() {
     scrollToDiv();
     filterCate();
     appendRecruit();
+    trigerMap();
     showBackToTop();
+
 });
+
+function trigerMap() {
+    var path = window.location.href;
+    let Ketqua = "#" + path.substr(path.indexOf("#") + 1);
+    var contact = $(".contact").offset().top - 110;
+    $("html,body").animate({ scrollTop: contact });
+    $(Ketqua).trigger("click");
+    $(".footer-copyright .item-office a").on("click", function() {
+        var contact = $(".contact").offset().top - 110;
+        $("html,body").animate({ scrollTop: contact });
+        var link = "#" + $(this).attr("id");
+        $(link).trigger("click");
+    });
+}
 
 function height(el) {
     var height = 0;
