@@ -8,6 +8,7 @@ $(document).ready(function() {
     InsertBd();
     InsertBdTitle();
     formInner();
+    titleInner();
     coutingNumber();
     Showmap();
     linkAbout();
@@ -109,8 +110,15 @@ function appendRecruit() {
     $('#infor-box').appendTo('.recruitment-detail #infor-inner')
 }
 
+// function formInner() {
+//     $('#ctl00_altContent1_ctl03_pnlForm').appendTo('.product-detail-2 #form-inner')
+// }
 function formInner() {
-    $('#ctl00_altContent1_ctl03_pnlForm').appendTo('.product-detail-2 #form-inner')
+    $('.product-detail-2').appendTo('#form-inner')
+}
+
+function titleInner() {
+    $('#title-product-other').appendTo('.product-detail-3 #head-title')
 }
 
 function toggleMobileMenu() {
