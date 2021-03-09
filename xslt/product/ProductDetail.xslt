@@ -38,43 +38,35 @@
                             </div>
                             <div class="contact-pro-detail">
                                 <span class="ri-phone-line"></span>
-                                <a>
-                                    <xsl:attribute name="href">
-                                        <xsl:value-of select="Url"></xsl:value-of>
-                                    </xsl:attribute>
-                                    <xsl:attribute name="title">
-                                        <xsl:value-of select="Title"></xsl:value-of>
-                                    </xsl:attribute>
-                                    <xsl:text disable-output-escaping="yes">Liên hệ</xsl:text>
-                                </a>
+								<a>
+									<xsl:attribute name="href">
+										<xsl:text>#form-inner</xsl:text>
+										<!-- <xsl:value-of select="position()" /> -->
+									</xsl:attribute>
+									<xsl:attribute name="title">
+										<xsl:value-of select="Title"></xsl:value-of>
+									</xsl:attribute>
+									<xsl:value-of disable-output-escaping="yes" select="/ProductDetail/ContactUsText"></xsl:value-of>
+								</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="fullcontent-pro-detail">
-                    <div class="title">Ứng dụng</div>
+                    <div class="title">
+                        <xsl:value-of disable-output-escaping="yes" select="/ProductDetail/UngDungText"></xsl:value-of>
+                    </div>
                     <div class="caption-pro-detail">
                         <xsl:value-of disable-output-escaping="yes" select="FullContent"></xsl:value-of>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="product-detail-2">
-            <div class="container">
-                <div class="head-title">
-                    <img src="/Data/Sites/1/skins/default/img/title/information.png" alt=""/>
-                </div>
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div id="form-inner"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div id="form-inner"></div>
         <section class="product-detail-3">
             <div class="container">
-                <div class="head-title">
-                    <img src="/Data/Sites/1/skins/default/img/title/title-other-pro.png" alt=""/>
+                <div class="head-title" id="head-title">
+                    
                 </div>
                 <div class="detail-slide-3-swiper-wrapper">
                     <div class="nav-arrow-prev">

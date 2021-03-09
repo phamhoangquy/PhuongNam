@@ -154,6 +154,21 @@ function linkAbout() {
             );
         } // End if
     });
+    $(".contact-pro-detail a").on("click", function(event) {
+        if (this.hash !== "") {
+            let offset = $("header").outerHeight() + 50;
+            var hash = this.hash;
+            $(this).parent().addClass('active').siblings().removeClass("active")
+            $("html, body").animate({
+                    scrollTop: $(hash).offset().top - offset,
+                },
+                800,
+                function() {
+                    window.location.hash = hash;
+                }
+            );
+        } // End if
+    });
 }
 
 const scrollToDiv = () => {
