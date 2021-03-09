@@ -22,7 +22,7 @@
         <section class="bg-img-clouds">
             <div class="clouds-img">
                 <div class="img">
-                    <img src="/Data/Sites/1/skins/default/img/clouds.png" alt=""/>
+                    <img src="/Data/Sites/1/media/home/clouds.png " alt=""/>
                 </div>
             </div>
         </section>
